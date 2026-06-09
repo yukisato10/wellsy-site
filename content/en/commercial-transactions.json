@@ -1,0 +1,58 @@
+{
+  "title": "Commercial Transactions Notice",
+  "lastUpdated": "Last updated: June 9, 2026",
+  "description": "This page is required under Japan's Act on Specified Commercial Transactions.",
+  "intro": "This disclosure is made in accordance with Japan's Act on Specified Commercial Transactions (Article 11, Mail-Order Sales).\n\nThe Service currently has no paid features. A premium subscription is planned for the future via App Store and Google Play. This page will be updated when billing is introduced.",
+  "sections": [
+    {
+      "heading": "Seller Information",
+      "table": {
+        "headers": ["Item", "Details"],
+        "rows": [
+          ["Seller", "YUKI SATO"],
+          ["Address", "Available upon request (as permitted by law)"],
+          ["Phone", "Available upon request. Please contact us by email."],
+          ["Email", "wellsy.support@gmail.com"],
+          ["Service URL", "https://wellsy.app"]
+        ]
+      }
+    },
+    {
+      "heading": "Sales Terms",
+      "table": {
+        "headers": ["Item", "Details"],
+        "rows": [
+          ["Price", "Base plan: Free (current)\nPremium plan (planned): Price displayed in App Store / Google Play at time of purchase (tax included)"],
+          ["Additional charges", "Internet access and data transfer fees (borne by the user)"],
+          ["Payment method", "App Store (iPhone/iPad): payment via Apple ID\nGoogle Play (Android): payment via Google account"],
+          ["Billing timing", "Charged immediately upon purchase; subsequently charged automatically at each renewal date"],
+          ["Service delivery", "Premium features available immediately after payment (once billing is introduced)"],
+          ["Refund policy", "Due to the digital nature of the content, refunds are generally not available after purchase. Please contact Apple (reportaproblem.apple.com) or Google Play for store-level refund requests."],
+          ["System requirements", "iOS 16.0 or later / Android 9.0 or later"],
+          ["Free trial", "A free trial may be offered at launch. If not cancelled before the end of the trial, the subscription converts automatically to paid."]
+        ]
+      }
+    },
+    {
+      "heading": "How to Cancel (Future Reference)",
+      "subsections": [
+        {
+          "heading": "iPhone / iPad",
+          "body": "Settings → your name → Subscriptions → Wellsy → Cancel Subscription"
+        },
+        {
+          "heading": "Android",
+          "body": "Google Play → Menu (☰) → Subscriptions → Wellsy → Cancel"
+        }
+      ],
+      "note": "Cancel before the next renewal date. Access continues until the end of the billing period. You must cancel through your device store; emailing the Operator does not cancel the subscription."
+    },
+    {
+      "heading": "Contact",
+      "bullets": [
+        "Email: wellsy.support@gmail.com",
+        "Hours: Mon–Fri 10:00–18:00 JST"
+      ]
+    }
+  ]
+}

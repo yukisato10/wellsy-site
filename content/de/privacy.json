@@ -1,0 +1,253 @@
+{
+  "title": "Datenschutzerklärung",
+  "lastUpdated": "Zuletzt aktualisiert: 9. Juni 2026",
+  "description": "Datenschutzerklärung von Wellsy. Wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen. Enthält Informationen zu DSGVO-, CCPA- und koreanischen PIPA-Rechten.",
+  "intro": "YUKI SATO (Einzelunternehmer, nachfolgend 'Betreiber') betreibt die Gesundheits-App 'Wellsy' (nachfolgend 'Dienst'). Diese Datenschutzerklärung erläutert, wie wir Ihre personenbezogenen Daten erheben, verwenden und schützen. Sie entspricht dem japanischen Gesetz zum Schutz personenbezogener Daten, der DSGVO, dem CCPA/CPRA sowie dem koreanischen PIPA.\n\nDurch die Nutzung des Dienstes stimmen Sie dieser Datenschutzerklärung zu.",
+  "sections": [
+    {
+      "heading": "1. Verantwortlicher",
+      "bullets": [
+        "Name: YUKI SATO",
+        "Dienst: Wellsy",
+        "Kontakt: wellsy.support@gmail.com",
+        "DSGVO-Anfragen: wellsy.support@gmail.com (Betreff: DSGVO)",
+        "CCPA-Anfragen: wellsy.support@gmail.com (Betreff: CCPA)",
+        "PIPA-Anfragen: wellsy.support@gmail.com (Betreff: PIPA)"
+      ]
+    },
+    {
+      "heading": "2. Erhobene Daten",
+      "subsections": [
+        {
+          "heading": "Von Ihnen direkt bereitgestellte Daten",
+          "bullets": [
+            "Konto: Anzeigename, E-Mail-Adresse",
+            "Profilbild (gespeichert in Firebase Storage: users/{uid}/profile/avatar.webp)",
+            "Gesundheitsprofil: Größe, Alter, Geschlecht, Aktivitätsniveau (optional)",
+            "Gewicht & Körperfettanteil, Einheit",
+            "Ernährungsprotokolle: Mahlzeitenname, -typ, Zutaten, Kalorien, Makronährstoffe (E/F/K), Notizen",
+            "Lebensmittelfotos für KI-Analyse (users/{uid}/meals/{mealId}/image.webp)",
+            "Schlafprotokolle: Schlafenszeit, Aufwachzeit, Schlafdauer",
+            "Gruppeneinträge: Lebensmittelfoto, Kalorien, Makronährstoffe, Bildunterschrift (automatisch nach 24 Std. gelöscht)",
+            "Kommentare zu Gruppeneinträgen (max. 100 Zeichen)",
+            "Reaktionen: Typ (5 Optionen) und optionales Selfie-Foto",
+            "Meldungen & Sperren: ID des gemeldeten Inhalts, ID des gesperrten Benutzers"
+          ]
+        },
+        {
+          "heading": "Automatisch erhobene Daten",
+          "bullets": [
+            "Firebase-UID (eindeutiger Bezeichner aus Firebase Authentication)",
+            "FCM-Token (Gerätetoken für Push-Benachrichtigungen)",
+            "Sprach- und Zeitzoneneinstellungen",
+            "Nutzungsanzahl der KI-Analyse (Cloud Firestore: users/{uid}/usage_limits)",
+            "Erstellungs-/Aktualisierungszeitstempel",
+            "Streak-Daten",
+            "Abonnementstatus (bei Einführung der Abrechnung)"
+          ]
+        },
+        {
+          "heading": "Daten aus Drittanbieter-Anmeldung",
+          "bullets": [
+            "Apple Sign In: E-Mail-Adresse (falls offengelegt) und Benutzerkennung",
+            "Google Sign In: E-Mail, Anzeigename, Profilbild-URL"
+          ]
+        },
+        {
+          "heading": "Derzeit NICHT erhobene Daten",
+          "bullets": [
+            "Zahlungs-/Kreditkartendaten (Abrechnung noch nicht implementiert)",
+            "Standortdaten",
+            "Detaillierte Absturzberichte oder Nutzungsanalysen (derzeit deaktiviert)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Zwecke & Rechtsgrundlagen (DSGVO)",
+      "table": {
+        "headers": ["Zweck", "Rechtsgrundlage (DSGVO Art. 6)"],
+        "rows": [
+          ["Kontoerstellung, Authentifizierung", "Vertragserfüllung (b)"],
+          ["Ernährungs-, Gewichts- und Schlafprotokollierung & Anzeige", "Vertragserfüllung (b)"],
+          ["KI-Lebensmittelanalyse über OpenAI API", "Vertrag / Einwilligung (b)/(a)"],
+          ["Geräteseitige OCR über ML Kit (Nährwertkennzeichnung)", "Vertragserfüllung (b)"],
+          ["Gruppenfeatures: Einträge, Kommentare, Reaktionen, Meldungen, Sperren", "Vertragserfüllung (b)"],
+          ["Push- und lokale Benachrichtigungen", "Einwilligung (a)"],
+          ["Betrugserkennung & Sicherheit", "Berechtigte Interessen (f)"],
+          ["Fehlerbehebung & Serviceverbesserung", "Berechtigte Interessen (f)"],
+          ["Kundensupport", "Vertrag / Berechtigte Interessen (b)/(f)"],
+          ["Einhaltung gesetzlicher Vorschriften", "Rechtliche Verpflichtung (c)"],
+          ["Abonnementverwaltung (zukünftig)", "Vertragserfüllung (b)"]
+        ]
+      }
+    },
+    {
+      "heading": "4. OpenAI API – Datenübertragung",
+      "numbered": [
+        "Wenn Sie die KI-Lebensmittelanalyse nutzen, wird Ihr Lebensmittelfoto oder -text über unsere Cloud Functions (Region asia-northeast1) an OpenAI, Inc. (USA) übermittelt.",
+        "Es werden nur das Lebensmittelbild oder der Text übertragen – Ihre UID, Ihr Name und Ihre E-Mail werden NICHT an OpenAI gesendet.",
+        "OpenAI verwendet API-Daten nicht zum Training seiner Modelle (gemäß deren Richtlinien seit März 2023).",
+        "Nutzungslimits: 2 Analysen/Tag (kostenloser Plan); 10/Tag für Premium geplant.",
+        "OpenAI-Datenschutzrichtlinie: https://openai.com/privacy"
+      ]
+    },
+    {
+      "heading": "5. ML Kit OCR",
+      "numbered": [
+        "Wir verwenden Google ML Kit OCR (geräteseitig), um Text auf Lebensmittelverpackungen und Nährwertkennzeichnungen zu erkennen.",
+        "Die gesamte OCR-Verarbeitung erfolgt auf Ihrem Gerät – es werden keine Daten an Google-Server gesendet.",
+        "Erkannter Text wird in Cloud Firestore gespeichert, um Ernährungsprotokolle zu befüllen."
+      ]
+    },
+    {
+      "heading": "6. Firebase Storage & Datenspeicherort",
+      "body": "Wir nutzen Google Firebase (Projekt-ID: wellsy-53ae4). Cloud Firestore, Firebase Storage und Cloud Functions laufen in der Region asia-northeast1 (Tokio). Firebase Authentication verwendet die globale Infrastruktur von Google.",
+      "subsections": [
+        {
+          "heading": "Cloud Firestore-Sammlungen",
+          "bullets": [
+            "users/{uid}: Anzeigename, Profilbild-URL, Sprache, Zeitzone, FCM-Token",
+            "users/{uid}/meal_logs: Lebensmittelname, Zutaten, Kalorien, Makronährstoffe, Foto-URL, KI-Kommentar",
+            "users/{uid}/weight_logs: Gewicht, Körperfett, Einheit",
+            "users/{uid}/sleep_logs: Schlafenszeit, Aufwachzeit, Schlafdauer",
+            "users/{uid}/usage_limits: Nutzungsanzahl der KI-Analyse",
+            "groups/{groupId}: Gruppenname, Einladungscode, Mitgliederanzahl",
+            "groups/{groupId}/sharedMeals: Einträge (24 Std. TTL), Kommentare, Reaktionen, Selfie-URLs"
+          ]
+        },
+        {
+          "heading": "Firebase Storage-Pfade",
+          "bullets": [
+            "users/{uid}/profile/avatar.webp",
+            "users/{uid}/meals/{mealId}/image.webp",
+            "groups/{groupId}/icon.webp",
+            "groups/{groupId}/reactions/{mealId}/{uid_timestamp}.webp"
+          ]
+        }
+      ],
+      "note": "Firebase-Datenschutzrichtlinie: https://firebase.google.com/support/privacy"
+    },
+    {
+      "heading": "7. Sichtbarkeit von Gruppeninhalten",
+      "bullets": [
+        "Anzeigename, Profilbild, Streak-Anzahl: für alle Gruppenmitglieder sichtbar",
+        "Gruppeneinträge (Foto, Kalorien, Makronährstoffe, Bildunterschrift): für alle Mitglieder sichtbar (automatisch nach 24 Std. gelöscht)",
+        "Kommentare, Reaktionen, Selfie-Fotos: für alle Mitglieder sichtbar",
+        "Tagesstatus (ob Sie Ernährung/Gewicht/Schlaf protokolliert haben): für Mitglieder sichtbar",
+        "Detaillierte Nährwerte, genaues Gewicht und detaillierte Schlafdaten werden NICHT geteilt"
+      ]
+    },
+    {
+      "heading": "8. Meldungen & Sperren",
+      "numbered": [
+        "Sie können unangemessene Inhalte melden. Wir erheben die ID des gemeldeten Inhalts und die Kategorie.",
+        "Sie können andere Benutzer sperren. Sperrinformationen werden in Cloud Firestore gespeichert.",
+        "Meldedaten werden ausschließlich zur Sicherheit und Inhaltsmoderation verwendet.",
+        "Melde-/Sperrdaten werden nicht an Dritte weitergegeben (außer wenn gesetzlich vorgeschrieben)."
+      ]
+    },
+    {
+      "heading": "9. Datenspeicherung",
+      "table": {
+        "headers": ["Datentyp", "Aufbewahrungsdauer"],
+        "rows": [
+          ["Kontoinformationen (UID, E-Mail, Name)", "Während das Konto aktiv ist; bei Kontolöschung umgehend gelöscht"],
+          ["Ernährungs-, Gewichts- und Schlafprotokolle", "Während das Konto aktiv ist; bei Kontolöschung umgehend gelöscht"],
+          ["Lebensmittel- und Profilbilder", "Während das Konto aktiv ist; bei Kontolöschung umgehend gelöscht"],
+          ["Gruppeneinträge, Kommentare, Reaktionen, Selfies", "Automatisch 24 Std. nach dem Posten gelöscht"],
+          ["FCM-Token", "Während das Konto aktiv ist; bei Abmeldung/Löschung gelöscht"],
+          ["Melde- und Sperrdaten", "Nach Untersuchung oder Kontolöschung gelöscht"],
+          ["Zukünftige Abrechnungsunterlagen", "Gemäß geltendem Recht"],
+          ["Support-Nachrichten", "Für einen angemessenen Zeitraum nach der Lösung aufbewahrt"]
+        ]
+      }
+    },
+    {
+      "heading": "10. Kontolöschung & Datenlöschung",
+      "numbered": [
+        "Wenn Sie Ihr Konto löschen, werden unsere Cloud Functions (deleteUserData) ausgelöst und entfernen Ihre Daten aus Firebase Authentication, Cloud Firestore und Firebase Storage.",
+        "Gelöscht werden: Authentifizierungsinformationen, alle Protokolle, Profil- und Lebensmittelbilder, Gruppeneinträge/-kommentare/-reaktionen/-selfies, FCM-Token, Melde-/Sperrdaten.",
+        "Gesetzlich vorgeschriebene Daten werden nicht gelöscht.",
+        "Die Löschung ist unwiderruflich."
+      ]
+    },
+    {
+      "heading": "11. Weitergabe an Dritte & Datenverkauf",
+      "numbered": [
+        "Wir verkaufen Ihre personenbezogenen Daten nicht an Dritte.",
+        "Wir geben keine Daten für zielgerichtete Werbung weiter.",
+        "Wir dürfen Daten mit Dienstleistern (Firebase, OpenAI, RevenueCat) ausschließlich zum Betrieb des Dienstes teilen."
+      ]
+    },
+    {
+      "heading": "12. Sicherheit",
+      "bullets": [
+        "TLS 1.2+-Verschlüsselung für alle Kommunikationen",
+        "Firebase-Sicherheitsregeln (Benutzer können nur auf ihre eigenen Daten zugreifen)",
+        "Firebase Authentication verwaltet das Passwort-Hashing",
+        "API-Schlüssel werden nie dem Client gegenüber offengelegt (alle sensiblen Aufrufe über Cloud Functions)"
+      ]
+    },
+    {
+      "heading": "13. Rechte von EU/EWR-Nutzern (DSGVO)",
+      "body": "EU/EWR-Einwohner haben folgende Rechte gemäß DSGVO:",
+      "bullets": [
+        "Auskunft (Art. 15): Kopie Ihrer Daten erhalten",
+        "Berichtigung (Art. 16): unrichtige Daten korrigieren lassen",
+        "Löschung (Art. 17): Löschung beantragen ('Recht auf Vergessenwerden')",
+        "Einschränkung (Art. 18): Verarbeitung einschränken",
+        "Datenübertragbarkeit (Art. 20): Daten in maschinenlesbarem Format erhalten",
+        "Widerspruch (Art. 21): Verarbeitung auf Basis berechtigter Interessen widersprechen",
+        "Einwilligung widerrufen: jederzeit, ohne Auswirkung auf vorherige Verarbeitung"
+      ],
+      "note": "Beschwerden bei Aufsichtsbehörden: https://edpb.europa.eu/about-edpb/about-edpb/members_en. Gesundheitsdaten werden als besondere Kategorie gemäß DSGVO Art. 9 auf Basis ausdrücklicher Einwilligung verarbeitet."
+    },
+    {
+      "heading": "14. Einwohner Kaliforniens (CCPA/CPRA)",
+      "body": "Einwohner Kaliforniens haben folgende Rechte:",
+      "bullets": [
+        "Auskunftsrecht: Kategorien und Zwecke der erhobenen Daten",
+        "Löschungsrecht: Löschung Ihrer personenbezogenen Daten beantragen",
+        "Recht auf Widerspruch: Wir verkaufen KEINE Daten und teilen sie NICHT für zielgerichtete Werbung",
+        "Berichtigungsrecht (CPRA): unrichtige personenbezogene Daten berichtigen lassen",
+        "Nicht-Diskriminierung: keine diskriminierende Behandlung bei Rechteausübung"
+      ],
+      "note": "Anfragen an: wellsy.support@gmail.com (Betreff: CCPA Rights Request)"
+    },
+    {
+      "heading": "15. Koreanische Einwohner (PIPA)",
+      "numbered": [
+        "Koreanische Einwohner können Auskunft, Berichtigung, Löschung oder Aussetzung der Verarbeitung ihrer personenbezogenen Daten beantragen.",
+        "Datenschutzbeauftragter: YUKI SATO (wellsy.support@gmail.com)",
+        "Grenzüberschreitende Übertragung: Daten werden in Japan (Firebase) und den USA (OpenAI) gemäß PIPA-Anforderungen verarbeitet.",
+        "Beschwerden: Personal Information Protection Commission (www.pipc.go.kr) oder KISA (privacy.kisa.or.kr)"
+      ]
+    },
+    {
+      "heading": "16. Datenschutz für Kinder",
+      "numbered": [
+        "Der Dienst richtet sich nicht an Nutzer unter 13 Jahren (14 in Korea, 16 in der EU).",
+        "Wir werden Daten löschen, wenn wir feststellen, dass wir sie von einem Kind unterhalb der geltenden Altersgrenze erhoben haben.",
+        "Kontakt: wellsy.support@gmail.com"
+      ]
+    },
+    {
+      "heading": "17. Aktualisierungen der Datenschutzerklärung",
+      "numbered": [
+        "Wir können diese Datenschutzerklärung aktualisieren, um rechtliche Änderungen oder Dienstaktualisierungen zu berücksichtigen.",
+        "Wesentliche Änderungen werden 30 Tage im Voraus per In-App-Benachrichtigung oder E-Mail mitgeteilt.",
+        "Die weitere Nutzung nach der Aktualisierung gilt als Zustimmung."
+      ]
+    },
+    {
+      "heading": "18. Kontakt",
+      "bullets": [
+        "Datenschutzbeauftragter: YUKI SATO",
+        "E-Mail: wellsy.support@gmail.com",
+        "Sprachen: Japanisch, Englisch",
+        "Antwortzeit: innerhalb eines angemessenen Zeitraums (in der Regel werktags)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "title": "Privacy Policy",
+  "lastUpdated": "Last updated: June 9, 2026",
+  "description": "Wellsy's Privacy Policy. How we collect, use, and protect your personal information. Includes GDPR, CCPA, and Korean PIPA rights.",
+  "intro": "YUKI SATO (sole proprietor, hereafter \"Operator\") operates the health-care application \"Wellsy\" (hereafter \"Service\"). This Privacy Policy explains how we collect, use, and protect your personal information. It complies with Japan's Act on the Protection of Personal Information, GDPR, CCPA/CPRA, and Korea's PIPA.\n\nBy using the Service you consent to this Policy.",
+  "sections": [
+    {
+      "heading": "1. Data Controller",
+      "bullets": [
+        "Name: YUKI SATO",
+        "Service: Wellsy",
+        "Contact: wellsy.support@gmail.com",
+        "GDPR inquiries: wellsy.support@gmail.com (subject: GDPR)",
+        "CCPA inquiries: wellsy.support@gmail.com (subject: CCPA)",
+        "PIPA inquiries: wellsy.support@gmail.com (subject: PIPA)"
+      ]
+    },
+    {
+      "heading": "2. Data We Collect",
+      "subsections": [
+        {
+          "heading": "Data you provide directly",
+          "bullets": [
+            "Account: display name, email address",
+            "Profile picture (stored in Firebase Storage: users/{uid}/profile/avatar.webp)",
+            "Health profile: height, age, gender, activity level (optional)",
+            "Weight & body fat percentage, unit",
+            "Food logs: meal name, type, ingredients, calories, macros (P/F/C), notes",
+            "Food photos for AI analysis (users/{uid}/meals/{mealId}/image.webp)",
+            "Sleep logs: bedtime, wake time, duration",
+            "Group posts: food photo, calories, macros, caption (auto-deleted after 24 h)",
+            "Comments on group posts (max 100 chars)",
+            "Reactions: type (5 options) and optional selfie photo",
+            "Reports & blocks: reported content ID, blocked user ID"
+          ]
+        },
+        {
+          "heading": "Automatically collected data",
+          "bullets": [
+            "Firebase UID (unique identifier from Firebase Authentication)",
+            "FCM token (device token for push notifications)",
+            "Language & timezone settings",
+            "AI analysis usage count (Cloud Firestore: users/{uid}/usage_limits)",
+            "Created/updated timestamps",
+            "Streak data",
+            "Subscription status (when billing is introduced)"
+          ]
+        },
+        {
+          "heading": "Data from third-party sign-in",
+          "bullets": [
+            "Apple Sign In: email address (if disclosed) and user identifier",
+            "Google Sign In: email, display name, profile picture URL"
+          ]
+        },
+        {
+          "heading": "Data NOT currently collected",
+          "bullets": [
+            "Payment / credit-card data (billing not yet implemented)",
+            "Location data",
+            "Detailed crash reports or usage analytics (currently disabled)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Purposes & Legal Basis (GDPR)",
+      "table": {
+        "headers": ["Purpose", "Legal basis (GDPR Art. 6)"],
+        "rows": [
+          ["Account creation, authentication", "Performance of contract (b)"],
+          ["Food, weight, sleep logging & display", "Performance of contract (b)"],
+          ["AI food analysis via OpenAI API", "Contract / Consent (b)/(a)"],
+          ["On-device OCR via ML Kit (nutrition labels)", "Performance of contract (b)"],
+          ["Group features: posts, comments, reactions, reports, blocks", "Performance of contract (b)"],
+          ["Push & local notifications", "Consent (a)"],
+          ["Fraud detection & security", "Legitimate interests (f)"],
+          ["Bug fixing & service improvement", "Legitimate interests (f)"],
+          ["Customer support", "Contract / Legitimate interests (b)/(f)"],
+          ["Legal compliance", "Legal obligation (c)"],
+          ["Subscription management (future)", "Performance of contract (b)"]
+        ]
+      }
+    },
+    {
+      "heading": "4. OpenAI API Data Transfer",
+      "numbered": [
+        "When you use AI food analysis, your food photo or text is sent to OpenAI, Inc. (USA) via our Cloud Functions (asia-northeast1 region).",
+        "Only the food image or text is sent — your UID, name, and email are NOT sent to OpenAI.",
+        "OpenAI does not use API data to train its models (per their policy since March 2023).",
+        "Usage limits: 2 analyses/day (free plan); 10/day planned for premium.",
+        "OpenAI Privacy Policy: https://openai.com/privacy"
+      ]
+    },
+    {
+      "heading": "5. ML Kit OCR",
+      "numbered": [
+        "We use Google ML Kit OCR (on-device) to recognize text on food packaging and nutrition labels.",
+        "All OCR processing happens on your device — no data is sent to Google servers.",
+        "Recognised text is stored in Cloud Firestore to help populate food logs."
+      ]
+    },
+    {
+      "heading": "6. Firebase Storage & Data Location",
+      "body": "We use Google Firebase (project ID: wellsy-53ae4). Cloud Firestore, Firebase Storage, and Cloud Functions run in the asia-northeast1 (Tokyo) region. Firebase Authentication uses Google's global infrastructure.",
+      "subsections": [
+        {
+          "heading": "Cloud Firestore collections",
+          "bullets": [
+            "users/{uid}: display name, profile picture URL, language, timezone, FCM token",
+            "users/{uid}/meal_logs: food name, ingredients, calories, macros, photo URL, AI comment",
+            "users/{uid}/weight_logs: weight, body fat, unit",
+            "users/{uid}/sleep_logs: bedtime, wake time, duration",
+            "users/{uid}/usage_limits: AI analysis usage count",
+            "groups/{groupId}: group name, invite code, member count",
+            "groups/{groupId}/sharedMeals: posts (24 h TTL), comments, reactions, selfie URLs"
+          ]
+        },
+        {
+          "heading": "Firebase Storage paths",
+          "bullets": [
+            "users/{uid}/profile/avatar.webp",
+            "users/{uid}/meals/{mealId}/image.webp",
+            "groups/{groupId}/icon.webp",
+            "groups/{groupId}/reactions/{mealId}/{uid_timestamp}.webp"
+          ]
+        }
+      ],
+      "note": "Firebase Privacy Policy: https://firebase.google.com/support/privacy"
+    },
+    {
+      "heading": "7. Group Content Visibility",
+      "bullets": [
+        "Display name, profile picture, streak count: visible to all group members",
+        "Group posts (photo, calories, macros, caption): visible to all members (auto-deleted after 24 h)",
+        "Comments, reactions, selfie photos: visible to all members",
+        "Daily status (whether you logged food/weight/sleep): visible to members",
+        "Detailed nutrition values, exact weight, and detailed sleep data are NOT shared"
+      ]
+    },
+    {
+      "heading": "8. Reports & Blocks",
+      "numbered": [
+        "You can report inappropriate content. We collect the reported content ID and category.",
+        "You can block other users. Block information is stored in Cloud Firestore.",
+        "Report data is used for safety and content moderation only.",
+        "Report/block data is not shared with third parties (except when required by law)."
+      ]
+    },
+    {
+      "heading": "9. Data Retention",
+      "table": {
+        "headers": ["Data type", "Retention"],
+        "rows": [
+          ["Account info (UID, email, name)", "While account is active; deleted promptly on account deletion"],
+          ["Food, weight, sleep logs", "While account is active; deleted promptly on account deletion"],
+          ["Food & profile images", "While account is active; deleted promptly on account deletion"],
+          ["Group posts, comments, reactions, selfies", "Auto-deleted 24 h after posting"],
+          ["FCM token", "While account is active; deleted on sign-out/deletion"],
+          ["Report & block data", "Deleted after investigation or account deletion"],
+          ["Future billing records", "As required by applicable law"],
+          ["Support messages", "Retained for a reasonable period after resolution"]
+        ]
+      }
+    },
+    {
+      "heading": "10. Account Deletion & Data Removal",
+      "numbered": [
+        "When you delete your account, our Cloud Functions (deleteUserData) are triggered and remove your data from Firebase Authentication, Cloud Firestore, and Firebase Storage.",
+        "Deleted: authentication info, all logs, profile & food images, group posts/comments/reactions/selfies, FCM token, report/block data.",
+        "Data required by law is not deleted.",
+        "Deletion is irreversible."
+      ]
+    },
+    {
+      "heading": "11. Third-Party Sharing & Data Sales",
+      "numbered": [
+        "We do not sell your personal information to third parties.",
+        "We do not share data for targeted advertising.",
+        "We may share data with service providers (Firebase, OpenAI, RevenueCat) solely to operate the Service."
+      ]
+    },
+    {
+      "heading": "12. Security",
+      "bullets": [
+        "TLS 1.2+ encryption for all communications",
+        "Firebase Security Rules (users can only access their own data)",
+        "Firebase Authentication handles password hashing",
+        "API keys never exposed to clients (all sensitive calls via Cloud Functions)"
+      ]
+    },
+    {
+      "heading": "13. EU/EEA User Rights (GDPR)",
+      "body": "EU/EEA residents have the following rights under GDPR:",
+      "bullets": [
+        "Access (Art. 15): obtain a copy of your data",
+        "Rectification (Art. 16): correct inaccurate data",
+        "Erasure (Art. 17): request deletion ('right to be forgotten')",
+        "Restriction (Art. 18): restrict processing",
+        "Portability (Art. 20): receive your data in machine-readable format",
+        "Objection (Art. 21): object to processing based on legitimate interests",
+        "Withdraw consent: at any time, without affecting prior processing"
+      ],
+      "note": "Supervisory authority complaints: https://edpb.europa.eu/about-edpb/about-edpb/members_en. Health data is processed as special category data under GDPR Art. 9 based on explicit consent."
+    },
+    {
+      "heading": "14. California Residents (CCPA/CPRA)",
+      "body": "California residents have the following rights:",
+      "bullets": [
+        "Right to Know: categories and purposes of data collected",
+        "Right to Delete: request deletion of your personal information",
+        "Right to Opt-Out: we do NOT sell or share data for targeted advertising",
+        "Right to Correct (CPRA): correct inaccurate personal information",
+        "Non-Discrimination: no discriminatory treatment for exercising rights"
+      ],
+      "note": "Submit requests to: wellsy.support@gmail.com (subject: CCPA Rights Request)"
+    },
+    {
+      "heading": "15. Korean Residents (PIPA)",
+      "numbered": [
+        "Korean residents may request access, correction, deletion, or processing suspension of their personal information.",
+        "Privacy Manager: YUKI SATO (wellsy.support@gmail.com)",
+        "Cross-border transfer: data is processed in Japan (Firebase) and USA (OpenAI) per PIPA requirements.",
+        "Complaints: Personal Information Protection Commission (www.pipc.go.kr) or KISA (privacy.kisa.or.kr)"
+      ]
+    },
+    {
+      "heading": "16. Children's Privacy",
+      "numbered": [
+        "The Service is not directed to users under 13 (14 in Korea, 16 in EU).",
+        "We will delete data if we become aware we have collected it from a child below the applicable age limit.",
+        "Contact: wellsy.support@gmail.com"
+      ]
+    },
+    {
+      "heading": "17. Policy Updates",
+      "numbered": [
+        "We may update this Policy to reflect legal changes or service updates.",
+        "Significant changes will be notified 30 days in advance via in-app notice or email.",
+        "Continued use after the update constitutes acceptance."
+      ]
+    },
+    {
+      "heading": "18. Contact",
+      "bullets": [
+        "Privacy Manager: YUKI SATO",
+        "Email: wellsy.support@gmail.com",
+        "Languages: Japanese, English",
+        "Response time: within a reasonable period (typically weekdays)"
+      ]
+    }
+  ]
+}

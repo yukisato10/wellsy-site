@@ -1,0 +1,130 @@
+{
+  "title": "Centre d'assistance",
+  "description": "Trouvez des réponses aux questions fréquentes sur Wellsy.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "contactHours": "Lun–Ven 10h00–18h00 JST",
+  "responseTime": "Généralement sous 2 à 3 jours ouvrables",
+  "noReplyNote": "Remarque : Cette adresse e-mail peut être modifiée à l'avenir. Consultez toujours cette page pour les coordonnées les plus récentes.",
+  "categories": [
+    {
+      "id": "account",
+      "icon": "👤",
+      "label": "Compte et connexion",
+      "faqs": [
+        {
+          "q": "Comment supprimer mon compte ?",
+          "a": "Dans l'application : onglet Profil → Paramètres (icône engrenage) → Compte → Supprimer le compte. Toutes les données (journaux alimentaires, poids, sommeil, contenu de groupe, images) seront définitivement supprimées et ne pourront pas être récupérées.",
+          "link": { "href": "/fr/delete-account", "label": "Voir le guide de suppression complet" }
+        },
+        {
+          "q": "Comment réinitialiser mon mot de passe ?",
+          "a": "Sur l'écran de connexion, appuyez sur « Mot de passe oublié » et entrez votre adresse e-mail enregistrée. Vous recevrez un lien de réinitialisation.\n\nSi vous vous êtes connecté avec Apple ou Google, aucun mot de passe n'est nécessaire.",
+          "link": null
+        },
+        {
+          "q": "La connexion Apple / Google ne fonctionne pas. Que dois-je faire ?",
+          "a": "Essayez les étapes suivantes :\n\n① Vérifiez vos paramètres Apple ID ou Google sur l'appareil\n② Forcez la fermeture de l'application et rouvrez-la\n③ Redémarrez votre appareil\n\nSi le problème persiste, contactez wellsy.support@gmail.com en indiquant votre système d'exploitation et la version de l'application.",
+          "link": null
+        },
+        {
+          "q": "Comment transférer mes données vers un nouvel appareil ?",
+          "a": "Connectez-vous simplement avec le même compte (Apple ID, compte Google ou e-mail) sur le nouvel appareil. Toutes les données se synchronisent automatiquement.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "icon": "🗑️",
+      "label": "Données et confidentialité",
+      "faqs": [
+        {
+          "q": "Comment supprimer des journaux spécifiques ?",
+          "a": "Ouvrez l'écran de détail du journal et appuyez sur le bouton de suppression. Pour tout supprimer, supprimez votre compte.",
+          "link": { "href": "/fr/delete-account", "label": "Guide de suppression de compte" }
+        },
+        {
+          "q": "Que se passe-t-il avec mes données lorsque je supprime mon compte ?",
+          "a": "La suppression de votre compte déclenche nos Cloud Functions (deleteUserData), qui suppriment toutes vos données de Firebase. C'est irréversible.",
+          "link": null
+        },
+        {
+          "q": "Puis-je exporter mes données ?",
+          "a": "L'export intégré à l'application est en cours de développement. Pour exercer votre droit à la portabilité des données RGPD ou CCPA, envoyez un e-mail à wellsy.support@gmail.com (objet : Demande de portabilité des données).",
+          "link": null
+        },
+        {
+          "q": "Comment demander l'accès, la rectification ou la suppression de mes données personnelles ?",
+          "a": "Envoyez un e-mail à wellsy.support@gmail.com depuis votre adresse enregistrée (objet : Demande de confidentialité). Pour les demandes RGPD, incluez « RGPD » dans l'objet.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "icon": "📱",
+      "label": "Fonctionnalités",
+      "faqs": [
+        {
+          "q": "Le résultat de l'analyse IA semble inexact. Que puis-je faire ?",
+          "a": "L'analyse alimentaire IA est une estimation de l'API OpenAI. La précision dépend de l'angle de la photo, de l'éclairage et du type de plat.\n\nConseils pour de meilleurs résultats :\n· Photographiez de directement au-dessus ou à 45°\n· Photographiez les plats mixtes séparément\n\nPour des informations nutritionnelles précises, consultez l'emballage alimentaire ou un diététicien. Cette fonctionnalité n'est pas à usage médical.",
+          "link": null
+        },
+        {
+          "q": "Combien d'analyses IA puis-je utiliser par jour ?",
+          "a": "Plan gratuit : 2 analyses par jour. Le compteur se réinitialise à minuit JST. Premium (prévu) : 10 par jour.",
+          "link": null
+        },
+        {
+          "q": "Je ne reçois pas de notifications. Que dois-je faire ?",
+          "a": "iOS : Réglages → Notifications → Wellsy → Autoriser les notifications (activer)\nAndroid : Paramètres → Applications → Wellsy → Notifications (activer)\n\nRedémarrez l'application après avoir modifié les paramètres. Si les problèmes persistent, contactez wellsy.support@gmail.com.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "group",
+      "icon": "👥",
+      "label": "Groupes",
+      "faqs": [
+        {
+          "q": "Comment quitter un groupe ?",
+          "a": "Groupes → sélectionner le groupe → Paramètres du groupe → Quitter le groupe. Nous recommandons de supprimer vos publications/commentaires d'abord.",
+          "link": null
+        },
+        {
+          "q": "J'ai été invité mais je ne peux pas rejoindre un groupe.",
+          "a": "Vérifiez :\n① Le code d'invitation (6 caractères) est saisi correctement\n② Le code n'a pas expiré (demandez à l'administrateur du groupe d'en émettre un nouveau)\n③ Vous n'avez pas atteint la limite de 3 groupes (plan gratuit)\n④ Votre demande d'adhésion est peut-être en attente d'approbation de l'administrateur",
+          "link": null
+        },
+        {
+          "q": "Combien de temps les publications de groupe sont-elles visibles ?",
+          "a": "Les publications de groupe sont automatiquement supprimées 24 heures après leur publication par nos Cloud Functions. Les commentaires, réactions et photos selfie sont également supprimés à ce moment-là.",
+          "link": null
+        },
+        {
+          "q": "Un membre du groupe a publié du contenu inapproprié. Que puis-je faire ?",
+          "a": "Utilisez la fonctionnalité de signalement intégrée à l'application, ou envoyez un e-mail à wellsy.support@gmail.com (objet : Signaler un contenu inapproprié) avec la description du contenu et la date.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "icon": "⭐",
+      "label": "Premium et facturation",
+      "faqs": [
+        {
+          "q": "Y a-t-il un plan premium disponible maintenant ?",
+          "a": "Pas encore. Un plan d'abonnement premium est prévu pour l'avenir via l'App Store et Google Play. Nous vous notifierons lors de son lancement.",
+          "link": null
+        },
+        {
+          "q": "Comment annuler un abonnement ? (Pour référence future)",
+          "a": "iPhone/iPad : Réglages → votre nom → Abonnements → Wellsy → Résilier l'abonnement\n\nAndroid : Google Play → Menu → Abonnements → Wellsy → Annuler\n\nAnnulez avant la prochaine date de renouvellement. Vous conservez l'accès jusqu'à la fin de la période de facturation.",
+          "link": null
+        }
+      ]
+    }
+  ]
+}

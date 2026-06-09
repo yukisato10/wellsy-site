@@ -1,0 +1,130 @@
+{
+  "title": "Support Center",
+  "description": "Find answers to common questions about Wellsy.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "contactHours": "Mon–Fri 10:00–18:00 JST",
+  "responseTime": "Typically within 2–3 business days",
+  "noReplyNote": "Note: This email address may change in the future. Always check this page for the latest contact details.",
+  "categories": [
+    {
+      "id": "account",
+      "icon": "👤",
+      "label": "Account & Login",
+      "faqs": [
+        {
+          "q": "How do I delete my account?",
+          "a": "In the app: Profile tab → Settings (gear icon) → Account → Delete Account. All data (food logs, weight, sleep, group content, images) will be permanently deleted and cannot be recovered.",
+          "link": { "href": "/en/delete-account", "label": "View full deletion guide" }
+        },
+        {
+          "q": "How do I reset my password?",
+          "a": "On the login screen, tap \"Forgot password\" and enter your registered email. You'll receive a reset link.\n\nIf you signed in with Apple or Google, no password is needed.",
+          "link": null
+        },
+        {
+          "q": "Apple / Google sign-in isn't working. What should I do?",
+          "a": "Try the following:\n\n① Check your Apple ID or Google account settings on the device\n② Force-quit and reopen the app\n③ Restart your device\n\nIf the issue persists, contact wellsy.support@gmail.com with your OS and app version.",
+          "link": null
+        },
+        {
+          "q": "How do I transfer my data to a new device?",
+          "a": "Simply sign in with the same account (Apple ID, Google account, or email) on the new device. All data syncs automatically.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "icon": "🗑️",
+      "label": "Data & Privacy",
+      "faqs": [
+        {
+          "q": "How do I delete specific logs?",
+          "a": "Open the log detail screen and tap the delete button. To delete everything, delete your account.",
+          "link": { "href": "/en/delete-account", "label": "Account deletion guide" }
+        },
+        {
+          "q": "What happens to my data when I delete my account?",
+          "a": "Deleting your account triggers our Cloud Functions (deleteUserData), which removes all your data from Firebase. This is irreversible.",
+          "link": null
+        },
+        {
+          "q": "Can I export my data?",
+          "a": "In-app export is in development. To exercise your GDPR or CCPA data portability right, email wellsy.support@gmail.com (subject: Data Portability Request).",
+          "link": null
+        },
+        {
+          "q": "How do I request access, correction, or deletion of my personal data?",
+          "a": "Email wellsy.support@gmail.com from your registered address (subject: Privacy Request). For GDPR requests, include \"GDPR\" in the subject line.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "icon": "📱",
+      "label": "Features",
+      "faqs": [
+        {
+          "q": "The AI analysis result seems inaccurate. What can I do?",
+          "a": "AI food analysis is an estimate from OpenAI API. Accuracy depends on photo angle, lighting, and dish type.\n\nTips for better results:\n· Shoot from directly above or at 45°\n· Photograph mixed dishes separately\n\nFor precise nutritional info, check the food packaging or consult a dietitian. This feature is not for medical use.",
+          "link": null
+        },
+        {
+          "q": "How many AI analyses can I use per day?",
+          "a": "Free plan: 2 analyses per day. The count resets at midnight JST. Premium (planned): 10 per day.",
+          "link": null
+        },
+        {
+          "q": "I'm not receiving notifications. What should I do?",
+          "a": "iOS: Settings → Notifications → Wellsy → Allow Notifications (enable)\nAndroid: Settings → Apps → Wellsy → Notifications (enable)\n\nRestart the app after changing settings. If issues persist, contact wellsy.support@gmail.com.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "group",
+      "icon": "👥",
+      "label": "Groups",
+      "faqs": [
+        {
+          "q": "How do I leave a group?",
+          "a": "Groups → select group → Group Settings → Leave Group. We recommend deleting your posts/comments first.",
+          "link": null
+        },
+        {
+          "q": "I was invited but can't join a group.",
+          "a": "Check:\n① The invite code (6 chars) is entered correctly\n② The code hasn't expired (ask the group admin to re-issue)\n③ You haven't reached the 3-group limit (free plan)\n④ Your join request may be pending admin approval",
+          "link": null
+        },
+        {
+          "q": "How long are group posts visible?",
+          "a": "Group posts are automatically deleted 24 hours after posting by our Cloud Functions. Comments, reactions, and selfie photos are also deleted at that time.",
+          "link": null
+        },
+        {
+          "q": "A group member posted inappropriate content. What can I do?",
+          "a": "Use the in-app report feature, or email wellsy.support@gmail.com (subject: Report inappropriate content) with the content description and date.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "icon": "⭐",
+      "label": "Premium & Billing",
+      "faqs": [
+        {
+          "q": "Is there a premium plan available now?",
+          "a": "Not yet. A premium subscription plan is planned for the future via App Store and Google Play. We'll notify you when it launches.",
+          "link": null
+        },
+        {
+          "q": "How do I cancel a subscription? (Future reference)",
+          "a": "iPhone/iPad: Settings → your name → Subscriptions → Wellsy → Cancel Subscription\n\nAndroid: Google Play → Menu → Subscriptions → Wellsy → Cancel\n\nCancel before the next renewal date. You retain access until the end of the billing period.",
+          "link": null
+        }
+      ]
+    }
+  ]
+}

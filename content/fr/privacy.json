@@ -1,0 +1,253 @@
+{
+  "title": "Politique de confidentialité",
+  "lastUpdated": "Dernière mise à jour : 9 juin 2026",
+  "description": "Politique de confidentialité de Wellsy. Comment nous collectons, utilisons et protégeons vos informations personnelles. Inclut les droits RGPD, CCPA et PIPA coréen.",
+  "intro": "YUKI SATO (entrepreneur individuel, ci-après « Opérateur ») exploite l'application de santé « Wellsy » (ci-après « Service »). La présente Politique de confidentialité explique comment nous collectons, utilisons et protégeons vos informations personnelles. Elle est conforme à la loi japonaise sur la protection des informations personnelles, au RGPD, au CCPA/CPRA et au PIPA coréen.\n\nEn utilisant le Service, vous consentez à la présente Politique.",
+  "sections": [
+    {
+      "heading": "1. Responsable du traitement",
+      "bullets": [
+        "Nom : YUKI SATO",
+        "Service : Wellsy",
+        "Contact : wellsy.support@gmail.com",
+        "Demandes RGPD : wellsy.support@gmail.com (objet : RGPD)",
+        "Demandes CCPA : wellsy.support@gmail.com (objet : CCPA)",
+        "Demandes PIPA : wellsy.support@gmail.com (objet : PIPA)"
+      ]
+    },
+    {
+      "heading": "2. Données collectées",
+      "subsections": [
+        {
+          "heading": "Données que vous fournissez directement",
+          "bullets": [
+            "Compte : nom d'affichage, adresse e-mail",
+            "Photo de profil (stockée dans Firebase Storage : users/{uid}/profile/avatar.webp)",
+            "Profil de santé : taille, âge, sexe, niveau d'activité (facultatif)",
+            "Poids et pourcentage de masse grasse, unité",
+            "Journaux alimentaires : nom du repas, type, ingrédients, calories, macronutriments (P/L/G), notes",
+            "Photos d'aliments pour l'analyse IA (users/{uid}/meals/{mealId}/image.webp)",
+            "Journaux de sommeil : heure de coucher, heure de réveil, durée",
+            "Publications de groupe : photo d'aliment, calories, macronutriments, légende (supprimées automatiquement après 24 h)",
+            "Commentaires sur les publications de groupe (100 caractères maximum)",
+            "Réactions : type (5 options) et photo selfie optionnelle",
+            "Signalements et blocages : ID du contenu signalé, ID de l'utilisateur bloqué"
+          ]
+        },
+        {
+          "heading": "Données collectées automatiquement",
+          "bullets": [
+            "UID Firebase (identifiant unique issu de Firebase Authentication)",
+            "Jeton FCM (jeton d'appareil pour les notifications push)",
+            "Paramètres de langue et de fuseau horaire",
+            "Compteur d'utilisation de l'analyse IA (Cloud Firestore : users/{uid}/usage_limits)",
+            "Horodatages de création/mise à jour",
+            "Données de série (streak)",
+            "Statut d'abonnement (lors de l'introduction de la facturation)"
+          ]
+        },
+        {
+          "heading": "Données provenant de la connexion via un tiers",
+          "bullets": [
+            "Apple Sign In : adresse e-mail (si divulguée) et identifiant utilisateur",
+            "Google Sign In : e-mail, nom d'affichage, URL de la photo de profil"
+          ]
+        },
+        {
+          "heading": "Données NON collectées actuellement",
+          "bullets": [
+            "Données de paiement / carte de crédit (facturation non encore implémentée)",
+            "Données de localisation",
+            "Rapports de plantage détaillés ou analyses d'utilisation (actuellement désactivés)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "3. Finalités et bases légales (RGPD)",
+      "table": {
+        "headers": ["Finalité", "Base légale (RGPD Art. 6)"],
+        "rows": [
+          ["Création de compte, authentification", "Exécution du contrat (b)"],
+          ["Journalisation et affichage des repas, du poids, du sommeil", "Exécution du contrat (b)"],
+          ["Analyse alimentaire IA via OpenAI API", "Contrat / Consentement (b)/(a)"],
+          ["OCR sur appareil via ML Kit (étiquettes nutritionnelles)", "Exécution du contrat (b)"],
+          ["Fonctionnalités de groupe : publications, commentaires, réactions, signalements, blocages", "Exécution du contrat (b)"],
+          ["Notifications push et locales", "Consentement (a)"],
+          ["Détection de fraude et sécurité", "Intérêts légitimes (f)"],
+          ["Correction de bugs et amélioration du service", "Intérêts légitimes (f)"],
+          ["Service client", "Contrat / Intérêts légitimes (b)/(f)"],
+          ["Conformité légale", "Obligation légale (c)"],
+          ["Gestion des abonnements (futur)", "Exécution du contrat (b)"]
+        ]
+      }
+    },
+    {
+      "heading": "4. Transfert de données vers OpenAI API",
+      "numbered": [
+        "Lorsque vous utilisez l'analyse alimentaire IA, votre photo ou texte alimentaire est envoyé à OpenAI, Inc. (États-Unis) via nos Cloud Functions (région asia-northeast1).",
+        "Seule l'image ou le texte alimentaire est envoyé — votre UID, nom et e-mail ne sont PAS transmis à OpenAI.",
+        "OpenAI n'utilise pas les données API pour entraîner ses modèles (conformément à sa politique depuis mars 2023).",
+        "Limites d'utilisation : 2 analyses/jour (plan gratuit) ; 10/jour prévu pour le premium.",
+        "Politique de confidentialité d'OpenAI : https://openai.com/privacy"
+      ]
+    },
+    {
+      "heading": "5. ML Kit OCR",
+      "numbered": [
+        "Nous utilisons Google ML Kit OCR (sur appareil) pour reconnaître le texte sur les emballages alimentaires et les étiquettes nutritionnelles.",
+        "Tout le traitement OCR s'effectue sur votre appareil — aucune donnée n'est envoyée aux serveurs Google.",
+        "Le texte reconnu est stocké dans Cloud Firestore pour aider à remplir les journaux alimentaires."
+      ]
+    },
+    {
+      "heading": "6. Firebase Storage et localisation des données",
+      "body": "Nous utilisons Google Firebase (ID de projet : wellsy-53ae4). Cloud Firestore, Firebase Storage et Cloud Functions fonctionnent dans la région asia-northeast1 (Tokyo). Firebase Authentication utilise l'infrastructure mondiale de Google.",
+      "subsections": [
+        {
+          "heading": "Collections Cloud Firestore",
+          "bullets": [
+            "users/{uid} : nom d'affichage, URL de la photo de profil, langue, fuseau horaire, jeton FCM",
+            "users/{uid}/meal_logs : nom de l'aliment, ingrédients, calories, macronutriments, URL photo, commentaire IA",
+            "users/{uid}/weight_logs : poids, masse grasse, unité",
+            "users/{uid}/sleep_logs : heure de coucher, heure de réveil, durée",
+            "users/{uid}/usage_limits : compteur d'utilisation de l'analyse IA",
+            "groups/{groupId} : nom du groupe, code d'invitation, nombre de membres",
+            "groups/{groupId}/sharedMeals : publications (TTL 24 h), commentaires, réactions, URLs de selfies"
+          ]
+        },
+        {
+          "heading": "Chemins Firebase Storage",
+          "bullets": [
+            "users/{uid}/profile/avatar.webp",
+            "users/{uid}/meals/{mealId}/image.webp",
+            "groups/{groupId}/icon.webp",
+            "groups/{groupId}/reactions/{mealId}/{uid_timestamp}.webp"
+          ]
+        }
+      ],
+      "note": "Politique de confidentialité Firebase : https://firebase.google.com/support/privacy"
+    },
+    {
+      "heading": "7. Visibilité du contenu de groupe",
+      "bullets": [
+        "Nom d'affichage, photo de profil, compteur de série : visibles par tous les membres du groupe",
+        "Publications de groupe (photo, calories, macronutriments, légende) : visibles par tous les membres (supprimées automatiquement après 24 h)",
+        "Commentaires, réactions, photos selfie : visibles par tous les membres",
+        "Statut journalier (si vous avez enregistré repas/poids/sommeil) : visible par les membres",
+        "Les valeurs nutritionnelles détaillées, le poids exact et les données de sommeil détaillées ne sont PAS partagés"
+      ]
+    },
+    {
+      "heading": "8. Signalements et blocages",
+      "numbered": [
+        "Vous pouvez signaler un contenu inapproprié. Nous collectons l'ID du contenu signalé et la catégorie.",
+        "Vous pouvez bloquer d'autres utilisateurs. Les informations de blocage sont stockées dans Cloud Firestore.",
+        "Les données de signalement sont utilisées uniquement à des fins de sécurité et de modération du contenu.",
+        "Les données de signalement/blocage ne sont pas partagées avec des tiers (sauf obligation légale)."
+      ]
+    },
+    {
+      "heading": "9. Conservation des données",
+      "table": {
+        "headers": ["Type de données", "Durée de conservation"],
+        "rows": [
+          ["Informations de compte (UID, e-mail, nom)", "Pendant la durée d'activité du compte ; supprimées rapidement lors de la suppression du compte"],
+          ["Journaux alimentaires, de poids, de sommeil", "Pendant la durée d'activité du compte ; supprimées rapidement lors de la suppression du compte"],
+          ["Photos d'aliments et de profil", "Pendant la durée d'activité du compte ; supprimées rapidement lors de la suppression du compte"],
+          ["Publications, commentaires, réactions, selfies de groupe", "Supprimés automatiquement 24 h après la publication"],
+          ["Jeton FCM", "Pendant la durée d'activité du compte ; supprimé à la déconnexion/suppression"],
+          ["Données de signalement et de blocage", "Supprimées après investigation ou suppression du compte"],
+          ["Futurs enregistrements de facturation", "Conformément à la législation applicable"],
+          ["Messages de support", "Conservés pendant une période raisonnable après résolution"]
+        ]
+      }
+    },
+    {
+      "heading": "10. Suppression de compte et des données",
+      "numbered": [
+        "Lorsque vous supprimez votre compte, nos Cloud Functions (deleteUserData) sont déclenchées et suppriment vos données de Firebase Authentication, Cloud Firestore et Firebase Storage.",
+        "Supprimés : informations d'authentification, tous les journaux, photos de profil et d'aliments, publications/commentaires/réactions/selfies de groupe, jeton FCM, données de signalement/blocage.",
+        "Les données requises par la loi ne sont pas supprimées.",
+        "La suppression est irréversible."
+      ]
+    },
+    {
+      "heading": "11. Partage avec des tiers et vente de données",
+      "numbered": [
+        "Nous ne vendons pas vos informations personnelles à des tiers.",
+        "Nous ne partageons pas de données à des fins de publicité ciblée.",
+        "Nous pouvons partager des données avec des prestataires de services (Firebase, OpenAI, RevenueCat) uniquement pour exploiter le Service."
+      ]
+    },
+    {
+      "heading": "12. Sécurité",
+      "bullets": [
+        "Chiffrement TLS 1.2+ pour toutes les communications",
+        "Règles de sécurité Firebase (les utilisateurs n'accèdent qu'à leurs propres données)",
+        "Firebase Authentication gère le hachage des mots de passe",
+        "Les clés API ne sont jamais exposées aux clients (tous les appels sensibles passent par les Cloud Functions)"
+      ]
+    },
+    {
+      "heading": "13. Droits des utilisateurs UE/EEE (RGPD)",
+      "body": "Les résidents de l'UE/EEE disposent des droits suivants en vertu du RGPD :",
+      "bullets": [
+        "Accès (Art. 15) : obtenir une copie de vos données",
+        "Rectification (Art. 16) : corriger des données inexactes",
+        "Effacement (Art. 17) : demander la suppression (« droit à l'oubli »)",
+        "Limitation (Art. 18) : limiter le traitement",
+        "Portabilité (Art. 20) : recevoir vos données dans un format lisible par machine",
+        "Opposition (Art. 21) : s'opposer au traitement fondé sur des intérêts légitimes",
+        "Retrait du consentement : à tout moment, sans affecter le traitement antérieur"
+      ],
+      "note": "Réclamations auprès des autorités de contrôle : https://edpb.europa.eu/about-edpb/about-edpb/members_en. Les données de santé sont traitées en tant que données de catégorie spéciale au titre du RGPD Art. 9 sur la base du consentement explicite."
+    },
+    {
+      "heading": "14. Résidents de Californie (CCPA/CPRA)",
+      "body": "Les résidents de Californie disposent des droits suivants :",
+      "bullets": [
+        "Droit de savoir : catégories et finalités des données collectées",
+        "Droit à la suppression : demander la suppression de vos informations personnelles",
+        "Droit d'opposition : nous ne vendons PAS ni ne partageons de données à des fins de publicité ciblée",
+        "Droit de rectification (CPRA) : corriger des informations personnelles inexactes",
+        "Non-discrimination : aucun traitement discriminatoire pour l'exercice des droits"
+      ],
+      "note": "Envoyer les demandes à : wellsy.support@gmail.com (objet : CCPA Rights Request)"
+    },
+    {
+      "heading": "15. Résidents coréens (PIPA)",
+      "numbered": [
+        "Les résidents coréens peuvent demander l'accès, la rectification, la suppression ou la suspension du traitement de leurs informations personnelles.",
+        "Responsable de la protection des données : YUKI SATO (wellsy.support@gmail.com)",
+        "Transfert transfrontalier : les données sont traitées au Japon (Firebase) et aux États-Unis (OpenAI) conformément aux exigences du PIPA.",
+        "Réclamations : Commission de protection des informations personnelles (www.pipc.go.kr) ou KISA (privacy.kisa.or.kr)"
+      ]
+    },
+    {
+      "heading": "16. Protection de la vie privée des enfants",
+      "numbered": [
+        "Le Service ne s'adresse pas aux utilisateurs de moins de 13 ans (14 en Corée, 16 dans l'UE).",
+        "Nous supprimerons les données si nous constatons que nous les avons collectées auprès d'un enfant en dessous de la limite d'âge applicable.",
+        "Contact : wellsy.support@gmail.com"
+      ]
+    },
+    {
+      "heading": "17. Mises à jour de la politique",
+      "numbered": [
+        "Nous pouvons mettre à jour cette Politique pour refléter les modifications légales ou les mises à jour du service.",
+        "Les modifications importantes seront notifiées 30 jours à l'avance par notification intégrée à l'application ou par e-mail.",
+        "La poursuite de l'utilisation après la mise à jour constitue une acceptation."
+      ]
+    },
+    {
+      "heading": "18. Contact",
+      "bullets": [
+        "Responsable de la protection des données : YUKI SATO",
+        "E-mail : wellsy.support@gmail.com",
+        "Langues : japonais, anglais",
+        "Délai de réponse : dans un délai raisonnable (généralement les jours ouvrables)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "계정 삭제",
+  "description": "Wellsy 계정을 삭제하기 전에 다음 사항을 주의 깊게 읽어주세요. 삭제된 데이터는 복구할 수 없습니다.",
+  "warningTitle": "진행하기 전에 확인하세요",
+  "warningItems": [
+    "모든 데이터가 영구적으로 삭제되며 복구할 수 없습니다.",
+    "그룹에서 콘텐츠를 제거하고 싶다면 계정 삭제 전에 직접 삭제해 주세요.",
+    "향후 프리미엄 구독이 있다면 계정 삭제 전에 기기의 App Store 또는 Google Play에서 취소해 주세요."
+  ],
+  "deletedDataTitle": "삭제되는 항목",
+  "deletedDataNote": "계정 삭제 시 Cloud Functions(deleteUserData)가 실행되어 Firebase(Cloud Firestore 및 Storage)에서 다음 데이터가 삭제됩니다.",
+  "deletedData": [
+    { "icon": "🍽️", "label": "식사 기록", "detail": "음식명, 재료, 칼로리, 영양소, AI 코멘트, 메모" },
+    { "icon": "📷", "label": "음식 사진", "detail": "Firebase Storage에 저장된 사진" },
+    { "icon": "⚖️", "label": "체중 및 체지방 기록", "detail": "모든 측정 기록" },
+    { "icon": "😴", "label": "수면 기록", "detail": "취침 시간, 기상 시간, 수면 시간" },
+    { "icon": "👤", "label": "계정 정보", "detail": "표시 이름, 이메일, 프로필 사진, 설정" },
+    { "icon": "🔔", "label": "알림 설정 및 FCM 토큰", "detail": "푸시 알림 기기 토큰" },
+    { "icon": "👥", "label": "그룹 데이터", "detail": "그룹 게시물, 댓글, 반응(셀피 사진 포함), 그룹 설정" },
+    { "icon": "🚫", "label": "신고 및 차단", "detail": "신고된 콘텐츠 ID, 차단된 사용자 ID" },
+    { "icon": "🏃", "label": "스트리크 데이터", "detail": "연속 기록 횟수 및 스트리크 크레딧" }
+  ],
+  "groupNoteTitle": "그룹 게시물, 댓글 및 반응",
+  "groupNoteItems": [
+    "그룹 게시물은 24시간 후 자동 삭제됩니다. 계정 삭제 시에도 정리가 실행됩니다.",
+    "댓글, 반응, 셀피 사진도 함께 삭제됩니다.",
+    "계정 삭제 전에 그룹 콘텐츠를 삭제하는 것을 권장합니다.",
+    "표시 이름과 아이콘이 그룹 구성원 목록에서 제거됩니다."
+  ],
+  "stepsTitle": "앱에서 계정 삭제하는 방법",
+  "stepsIosTitle": "iPhone / iPad (iOS)",
+  "stepsIos": [
+    "Wellsy를 열고 하단의 프로필 탭을 탭합니다.",
+    "오른쪽 상단의 설정 아이콘(기어)을 탭합니다.",
+    "계정 섹션을 탭합니다.",
+    "계정 삭제를 탭합니다.",
+    "확인 대화상자를 확인하고 삭제를 탭합니다.",
+    "삭제가 완료되면 자동으로 로그아웃됩니다."
+  ],
+  "stepsAndroidTitle": "Android",
+  "stepsAndroid": [
+    "Wellsy를 열고 하단의 프로필 탭을 탭합니다.",
+    "오른쪽 상단의 설정 아이콘(기어)을 탭합니다.",
+    "계정 섹션을 탭합니다.",
+    "계정 삭제를 탭합니다.",
+    "확인 대화상자를 확인하고 삭제를 탭합니다.",
+    "삭제가 완료되면 자동으로 로그아웃됩니다."
+  ],
+  "contactTitle": "앱에 접근할 수 없나요?",
+  "contactBody": "앱에 접근할 수 없다면 등록된 이메일 주소로 계정 삭제 요청 이메일을 보내주세요. 영업일 기준 3~5일 이내에 응답하겠습니다.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "timelineTitle": "삭제 일정",
+  "timelineItems": [
+    "즉시: Firebase Authentication 자격 증명이 무효화됩니다.",
+    "확인 후: Cloud Functions(deleteUserData)가 Firestore 및 Storage 데이터 삭제를 시작합니다.",
+    "관련 법령에 따라 보관이 요구되는 데이터는 법적 의무에 따라 보유됩니다."
+  ],
+  "privacyLinkText": "개인정보 처리방침 제10조(계정 삭제 및 데이터 삭제) 참조"
+}

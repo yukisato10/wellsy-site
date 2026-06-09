@@ -1,0 +1,59 @@
+{
+  "title": "Delete Account",
+  "description": "Please read the following carefully before deleting your Wellsy account. Deleted data cannot be recovered.",
+  "warningTitle": "Before you proceed",
+  "warningItems": [
+    "All data will be permanently deleted and cannot be recovered.",
+    "If you want to remove content from groups, please delete it yourself before deleting your account.",
+    "If you have a future premium subscription, cancel it in your device's App Store or Google Play before deleting."
+  ],
+  "deletedDataTitle": "What gets deleted",
+  "deletedDataNote": "Deleting your account triggers Cloud Functions (deleteUserData), which removes the following data from Firebase (Cloud Firestore & Storage).",
+  "deletedData": [
+    { "icon": "🍽️", "label": "Food logs", "detail": "Meal name, ingredients, calories, macros, AI comments, notes" },
+    { "icon": "📷", "label": "Food photos", "detail": "Photos stored in Firebase Storage" },
+    { "icon": "⚖️", "label": "Weight & body fat logs", "detail": "All measurement records" },
+    { "icon": "😴", "label": "Sleep logs", "detail": "Bedtime, wake time, duration" },
+    { "icon": "👤", "label": "Account info", "detail": "Display name, email, profile picture, settings" },
+    { "icon": "🔔", "label": "Notification settings & FCM token", "detail": "Push-notification device token" },
+    { "icon": "👥", "label": "Group data", "detail": "Group posts, comments, reactions (including selfie photos), group settings" },
+    { "icon": "🚫", "label": "Reports & blocks", "detail": "Reported content IDs, blocked user IDs" },
+    { "icon": "🏃", "label": "Streak data", "detail": "Consecutive logging count and streak credits" }
+  ],
+  "groupNoteTitle": "Group posts, comments & reactions",
+  "groupNoteItems": [
+    "Group posts are auto-deleted after 24 h. Account deletion also triggers cleanup.",
+    "Comments, reactions, and selfie photos are also deleted.",
+    "We recommend deleting your group content before deleting your account.",
+    "Your display name and icon will be removed from group member lists."
+  ],
+  "stepsTitle": "How to delete your account in-app",
+  "stepsIosTitle": "iPhone / iPad (iOS)",
+  "stepsIos": [
+    "Open Wellsy and tap the Profile tab at the bottom.",
+    "Tap the Settings icon (gear) in the top-right corner.",
+    "Tap the Account section.",
+    "Tap Delete Account.",
+    "Review the confirmation dialog and tap Delete.",
+    "You will be signed out automatically once deletion is complete."
+  ],
+  "stepsAndroidTitle": "Android",
+  "stepsAndroid": [
+    "Open Wellsy and tap the Profile tab at the bottom.",
+    "Tap the Settings icon (gear) in the top-right corner.",
+    "Tap the Account section.",
+    "Tap Delete Account.",
+    "Review the confirmation dialog and tap Delete.",
+    "You will be signed out automatically once deletion is complete."
+  ],
+  "contactTitle": "Can't access the app?",
+  "contactBody": "If you cannot access the app, email us with your registered email address and a request to delete your account. We aim to respond within 3–5 business days.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "timelineTitle": "Deletion timeline",
+  "timelineItems": [
+    "Immediately: Firebase Authentication credentials are invalidated.",
+    "After confirmation: Cloud Functions (deleteUserData) begin removing Firestore and Storage data.",
+    "Data required by applicable law is retained as legally required."
+  ],
+  "privacyLinkText": "See Privacy Policy § 10 (Account Deletion & Data Removal)"
+}

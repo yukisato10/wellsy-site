@@ -1,0 +1,195 @@
+{
+  "title": "Conditions d'utilisation",
+  "lastUpdated": "Dernière mise à jour : 9 juin 2026",
+  "description": "Conditions d'utilisation de Wellsy. Veuillez les lire avant d'utiliser l'application.",
+  "intro": "Les présentes Conditions d'utilisation (« Conditions ») régissent votre utilisation de l'application de santé « Wellsy » (« Service ») exploitée par YUKI SATO (entrepreneur individuel, « Opérateur »). En installant ou en utilisant le Service, vous acceptez les présentes Conditions.",
+  "sections": [
+    {
+      "heading": "1. Définitions",
+      "numbered": [
+        "« Service » : l'application mobile Wellsy, les Cloud Functions, les notifications push, le site web et les services associés.",
+        "« Utilisateur » : toute personne physique qui crée un compte et accepte les présentes Conditions.",
+        "« Contenu utilisateur » : photos d'aliments, photos de profil, photos selfie, textes et tout autre contenu que vous soumettez.",
+        "« Fonctionnalité de groupe » : fonctionnalité permettant aux utilisateurs de former des groupes et de partager des données de santé.",
+        "« Fonctionnalité IA » : analyse d'images/textes alimentaires via l'API OpenAI appelée via les Cloud Functions (asia-northeast1).",
+        "« ML Kit OCR » : OCR sur appareil de Google pour lire les étiquettes nutritionnelles (aucun appel à un serveur externe).",
+        "« Données de santé » : journaux alimentaires, poids, masse grasse, enregistrements de sommeil et informations de santé connexes.",
+        "« Service Premium » : fonctionnalités d'abonnement payant prévues pour l'avenir (pas encore disponibles)."
+      ]
+    },
+    {
+      "heading": "2. Conditions d'éligibilité",
+      "numbered": [
+        "Vous devez avoir au moins 13 ans pour utiliser le Service.",
+        "Les utilisateurs de moins de 18 ans nécessitent le consentement parental/tuteur.",
+        "Résidents américains : les utilisateurs de moins de 13 ans sont interdits en vertu de la COPPA.",
+        "Résidents UE/EEE : les utilisateurs de moins de 16 ans (ou 13 dans certains États membres) nécessitent le consentement parental.",
+        "Résidents coréens : les utilisateurs de moins de 14 ans ne peuvent pas utiliser le Service."
+      ]
+    },
+    {
+      "heading": "3. Inscription au compte",
+      "numbered": [
+        "Méthodes de connexion (toutes via Firebase Authentication) : Apple Sign In, Google Sign In, e-mail/mot de passe.",
+        "Vous déclarez que toutes les informations d'inscription sont exactes, à jour et complètes.",
+        "Nous pouvons refuser une inscription si vous avez précédemment enfreint les présentes Conditions, fourni de fausses informations ou ne remplissez pas les conditions d'âge.",
+        "Gardez vos identifiants confidentiels. Ne les partagez pas, ne les prêtez pas et ne les transférez pas.",
+        "Signalez tout accès non autorisé immédiatement à wellsy.support@gmail.com.",
+        "La création de plusieurs comptes pour la même personne est généralement interdite."
+      ]
+    },
+    {
+      "heading": "4. Fonctionnalités du service",
+      "bullets": [
+        "Journalisation alimentaire (y compris analyse IA et ML Kit OCR pour les étiquettes nutritionnelles)",
+        "Suivi du poids et de la masse grasse avec graphiques",
+        "Journalisation et analyse du sommeil",
+        "Création, adhésion et partage de données de santé en groupe",
+        "Commentaires, réactions et réactions selfie au sein des groupes",
+        "Signalement de contenu et blocage d'utilisateurs",
+        "Suivi des séries (journalisation continue)",
+        "Rappels par notifications push et locales",
+        "Fonctionnalités premium (prévues pour l'avenir)"
+      ],
+      "note": "Backend : Google Firebase (ID de projet : wellsy-53ae4, Cloud Functions : asia-northeast1)."
+    },
+    {
+      "heading": "5. Fonctionnalité IA – Avertissement",
+      "numbered": [
+        "L'analyse alimentaire IA envoie votre photo ou texte alimentaire à OpenAI, Inc. (États-Unis) via les Cloud Functions.",
+        "Limites d'utilisation : 2 analyses/jour (gratuit) ; 10/jour prévu pour le premium.",
+        "Les résultats sont des estimations. L'exactitude n'est pas garantie.",
+        "Les résultats de l'IA sont uniquement à titre informatif — il ne s'agit pas de conseils médicaux.",
+        "Les interruptions ou modifications d'OpenAI peuvent temporairement affecter la disponibilité ; l'Opérateur n'est pas responsable."
+      ]
+    },
+    {
+      "heading": "6. Avertissement concernant les informations de santé",
+      "numbered": [
+        "Le Service est une aide à la gestion de la santé, pas un substitut aux soins médicaux ou au diagnostic.",
+        "Consultez un médecin, un diététicien ou un professionnel de santé avant de prendre des décisions alimentaires ou de santé.",
+        "L'Opérateur n'est pas responsable des problèmes de santé résultant d'actions prises sur la base des résultats du Service."
+      ]
+    },
+    {
+      "heading": "7. Fonctionnalité de groupe",
+      "numbered": [
+        "Rejoindre via un code d'invitation à 6 caractères. Maximum 20 membres par groupe.",
+        "Plan gratuit : jusqu'à 3 groupes. Premium : illimité (prévu).",
+        "Les publications de groupe sont automatiquement supprimées 24 heures après leur publication (via les Cloud Functions).",
+        "Commentaires : maximum 100 caractères, maximum 30 par publication.",
+        "Réactions : 5 types ; pièce jointe photo selfie optionnelle.",
+        "Les auteurs de publications peuvent supprimer leurs propres publications.",
+        "En rejoignant un groupe, vous consentez à ce que votre nom d'affichage, votre photo de profil et votre statut d'activité soient visibles par les membres.",
+        "Vous pouvez signaler un contenu inapproprié ou bloquer d'autres utilisateurs.",
+        "L'Opérateur peut supprimer du contenu, retirer des membres ou dissoudre des groupes en cas de violations constatées."
+      ]
+    },
+    {
+      "heading": "8. Contenu utilisateur et licence",
+      "numbered": [
+        "Vous déclarez que votre contenu est légal et ne viole pas les droits de tiers.",
+        "Vous conservez la propriété de votre Contenu utilisateur.",
+        "Vous accordez à l'Opérateur une licence mondiale, non exclusive et libre de redevances pour utiliser votre contenu uniquement pour fournir et améliorer le Service.",
+        "Cette licence prend fin lorsque votre compte et votre contenu sont supprimés.",
+        "Ne copiez pas, ne redistribuez pas et ne réutilisez pas le contenu d'autres utilisateurs au-delà de l'utilisation normale du Service."
+      ]
+    },
+    {
+      "heading": "9. Comportements interdits",
+      "numbered": [
+        "Violation des lois applicables ou de l'ordre public",
+        "Atteinte à la propriété intellectuelle, à la vie privée ou à d'autres droits de l'Opérateur ou de tiers",
+        "Usurpation d'identité d'un autre utilisateur ou soumission de fausses informations",
+        "Accès non autorisé, ingénierie inverse ou altération du Service",
+        "Perturbation du fonctionnement du Service (p. ex. requêtes excessives, DDoS)",
+        "Spam ou messages non sollicités",
+        "Harcèlement, menaces ou comportement discriminatoire envers d'autres utilisateurs",
+        "Téléchargement ou partage de photos ou vidéos d'une autre personne sans son consentement",
+        "Abus de la fonctionnalité de signalement (soumissions répétées de faux signalements)",
+        "Activité illégale (vente de drogues, fraude, MLM, etc.)",
+        "Publication de contenu discriminatoire, diffamatoire, violent ou explicitement sexuel",
+        "Utilisation commerciale du Service sans le consentement écrit préalable de l'Opérateur",
+        "Tout autre comportement que l'Opérateur juge raisonnablement inapproprié"
+      ]
+    },
+    {
+      "heading": "10. Propriété intellectuelle",
+      "numbered": [
+        "Toute propriété intellectuelle dans le Service (code, design, marque « Wellsy », etc.) appartient à l'Opérateur ou à ses concédants de licence.",
+        "Vous ne pouvez pas copier, modifier, distribuer ou vendre le contenu du Service sans consentement écrit préalable.",
+        "Les retours que vous fournissez peuvent être utilisés par l'Opérateur sans compensation."
+      ]
+    },
+    {
+      "heading": "11. Facturation Premium",
+      "numbered": [
+        "Wellsy peut utiliser RevenueCat pour gérer l'état des abonnements et les achats. Les paiements réels sont traités par l'App Store d'Apple ou Google Play.",
+        "Toute modification des conditions de facturation sera annoncée et ces Conditions mises à jour à l'avance."
+      ]
+    },
+    {
+      "heading": "12. Confidentialité",
+      "body": "Vos données personnelles sont traitées conformément à notre Politique de confidentialité (https://wellsy.app/fr/privacy), qui fait partie intégrante des présentes Conditions."
+    },
+    {
+      "heading": "13. Exclusions de garantie",
+      "numbered": [
+        "Le Service est fourni « en l'état » sans garantie d'adéquation à l'usage, d'exactitude ou de disponibilité.",
+        "L'Opérateur n'est pas responsable (sauf faute intentionnelle ou négligence grave) des interruptions de service, pertes de données, attaques de tiers ou résultats inexacts de l'IA.",
+        "L'Opérateur n'est pas responsable des litiges entre utilisateurs."
+      ]
+    },
+    {
+      "heading": "14. Limitation de responsabilité",
+      "numbered": [
+        "La responsabilité maximale totale de l'Opérateur pour les réclamations liées au Service est égale aux frais totaux payés dans les 3 mois précédant l'incident. Tant que le Service est gratuit, le plafond est de 1 000 JPY.",
+        "Les droits obligatoires de protection des consommateurs ne sont pas affectés.",
+        "Les lois obligatoires applicables peuvent remplacer cette section pour les utilisateurs situés en dehors du Japon."
+      ]
+    },
+    {
+      "heading": "15. Modifications du service et résiliation",
+      "numbered": [
+        "Les modifications importantes seront notifiées au moins 14 jours à l'avance (30 jours pour les modifications défavorables).",
+        "L'Opérateur peut suspendre le Service pour maintenance, sécurité ou force majeure sans préavis.",
+        "L'Opérateur fournira au moins 30 jours de préavis avant d'arrêter le Service."
+      ]
+    },
+    {
+      "heading": "16. Suspension et résiliation de compte",
+      "numbered": [
+        "L'Opérateur peut suspendre ou bannir définitivement des comptes pour violation des présentes Conditions, activité frauduleuse ou autres motifs raisonnables.",
+        "Pour contester une suspension, contactez wellsy.support@gmail.com."
+      ]
+    },
+    {
+      "heading": "17. Suppression de compte",
+      "numbered": [
+        "Pour supprimer votre compte : dans l'application, Profil → Paramètres (icône engrenage) → Compte → Supprimer le compte, ou envoyez un e-mail à wellsy.support@gmail.com.",
+        "La suppression déclenche les Cloud Functions (deleteUserData) pour supprimer vos données Firebase.",
+        "Les données supprimées ne peuvent pas être récupérées.",
+        "Supprimez vos publications/commentaires de groupe avant de supprimer votre compte si vous le souhaitez.",
+        "Annulez tout futur abonnement premium avant de supprimer votre compte."
+      ]
+    },
+    {
+      "heading": "18. Droit applicable et juridiction",
+      "numbered": [
+        "Les présentes Conditions sont régies par le droit japonais.",
+        "Les litiges seront d'abord résolus par négociation de bonne foi.",
+        "Les litiges non résolus seront soumis à la juridiction exclusive du tribunal de district de Tokyo.",
+        "Les résidents de l'UE/EEE conservent leurs droits en vertu des lois obligatoires de protection des consommateurs de l'UE applicables.",
+        "Les résidents coréens conservent leurs droits en vertu des lois obligatoires coréennes applicables."
+      ]
+    },
+    {
+      "heading": "Contact",
+      "bullets": [
+        "Opérateur : YUKI SATO",
+        "E-mail : wellsy.support@gmail.com",
+        "Langues : japonais, anglais"
+      ]
+    }
+  ]
+}

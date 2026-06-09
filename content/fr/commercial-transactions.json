@@ -1,0 +1,58 @@
+{
+  "title": "Mentions relatives aux transactions commerciales",
+  "lastUpdated": "Dernière mise à jour : 9 juin 2026",
+  "description": "Cette page est requise en vertu de la loi japonaise sur les transactions commerciales spécifiées.",
+  "intro": "Cette divulgation est effectuée conformément à la loi japonaise sur les transactions commerciales spécifiées (Article 11, Vente par correspondance).\n\nLe Service ne dispose actuellement d'aucune fonctionnalité payante. Un abonnement premium est prévu pour l'avenir via l'App Store et Google Play. Cette page sera mise à jour lors de l'introduction de la facturation.",
+  "sections": [
+    {
+      "heading": "Informations sur le vendeur",
+      "table": {
+        "headers": ["Élément", "Détails"],
+        "rows": [
+          ["Vendeur", "YUKI SATO"],
+          ["Adresse", "Disponible sur demande (conformément à la législation applicable)"],
+          ["Téléphone", "Disponible sur demande. Veuillez nous contacter par e-mail."],
+          ["E-mail", "wellsy.support@gmail.com"],
+          ["URL du service", "https://wellsy.app"]
+        ]
+      }
+    },
+    {
+      "heading": "Conditions de vente",
+      "table": {
+        "headers": ["Élément", "Détails"],
+        "rows": [
+          ["Prix", "Plan de base : Gratuit (actuel)\nPlan Premium (prévu) : Prix affiché dans l'App Store / Google Play au moment de l'achat (taxes incluses)"],
+          ["Frais supplémentaires", "Frais d'accès à Internet et de transfert de données (à la charge de l'utilisateur)"],
+          ["Mode de paiement", "App Store (iPhone/iPad) : paiement via Apple ID\nGoogle Play (Android) : paiement via compte Google"],
+          ["Moment de facturation", "Débité immédiatement à l'achat ; ensuite débité automatiquement à chaque date de renouvellement"],
+          ["Livraison du service", "Fonctionnalités premium disponibles immédiatement après le paiement (une fois la facturation introduite)"],
+          ["Politique de remboursement", "En raison de la nature numérique du contenu, les remboursements ne sont généralement pas disponibles après l'achat. Veuillez contacter Apple (reportaproblem.apple.com) ou Google Play pour les demandes de remboursement au niveau du magasin."],
+          ["Configuration système requise", "iOS 16.0 ou ultérieur / Android 9.0 ou ultérieur"],
+          ["Essai gratuit", "Un essai gratuit peut être proposé au lancement. Si non annulé avant la fin de la période d'essai, l'abonnement est automatiquement converti en payant."]
+        ]
+      }
+    },
+    {
+      "heading": "Comment annuler (Pour référence future)",
+      "subsections": [
+        {
+          "heading": "iPhone / iPad",
+          "body": "Réglages → votre nom → Abonnements → Wellsy → Résilier l'abonnement"
+        },
+        {
+          "heading": "Android",
+          "body": "Google Play → Menu (☰) → Abonnements → Wellsy → Annuler"
+        }
+      ],
+      "note": "Annulez avant la prochaine date de renouvellement. L'accès continue jusqu'à la fin de la période de facturation. Vous devez annuler via le magasin de votre appareil ; envoyer un e-mail à l'Opérateur n'annule pas l'abonnement."
+    },
+    {
+      "heading": "Contact",
+      "bullets": [
+        "E-mail : wellsy.support@gmail.com",
+        "Horaires : Lun–Ven 10h00–18h00 JST"
+      ]
+    }
+  ]
+}

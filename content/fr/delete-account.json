@@ -1,0 +1,59 @@
+{
+  "title": "Supprimer le compte",
+  "description": "Veuillez lire attentivement ce qui suit avant de supprimer votre compte Wellsy. Les données supprimées ne peuvent pas être récupérées.",
+  "warningTitle": "Avant de continuer",
+  "warningItems": [
+    "Toutes les données seront définitivement supprimées et ne pourront pas être récupérées.",
+    "Si vous souhaitez supprimer du contenu des groupes, veuillez le faire vous-même avant de supprimer votre compte.",
+    "Si vous avez un futur abonnement premium, annulez-le dans l'App Store ou Google Play de votre appareil avant de supprimer votre compte."
+  ],
+  "deletedDataTitle": "Ce qui est supprimé",
+  "deletedDataNote": "La suppression de votre compte déclenche les Cloud Functions (deleteUserData), qui suppriment les données suivantes de Firebase (Cloud Firestore et Storage).",
+  "deletedData": [
+    { "icon": "🍽️", "label": "Journaux alimentaires", "detail": "Nom du repas, ingrédients, calories, macronutriments, commentaires IA, notes" },
+    { "icon": "📷", "label": "Photos d'aliments", "detail": "Photos stockées dans Firebase Storage" },
+    { "icon": "⚖️", "label": "Journaux de poids et masse grasse", "detail": "Tous les enregistrements de mesures" },
+    { "icon": "😴", "label": "Journaux de sommeil", "detail": "Heure de coucher, heure de réveil, durée" },
+    { "icon": "👤", "label": "Informations de compte", "detail": "Nom d'affichage, e-mail, photo de profil, paramètres" },
+    { "icon": "🔔", "label": "Paramètres de notification et jeton FCM", "detail": "Jeton d'appareil pour les notifications push" },
+    { "icon": "👥", "label": "Données de groupe", "detail": "Publications de groupe, commentaires, réactions (y compris photos selfie), paramètres de groupe" },
+    { "icon": "🚫", "label": "Signalements et blocages", "detail": "ID des contenus signalés, ID des utilisateurs bloqués" },
+    { "icon": "🏃", "label": "Données de série", "detail": "Compteur de journalisation consécutive et crédits de série" }
+  ],
+  "groupNoteTitle": "Publications, commentaires et réactions de groupe",
+  "groupNoteItems": [
+    "Les publications de groupe sont automatiquement supprimées après 24 h. La suppression du compte déclenche également un nettoyage.",
+    "Les commentaires, réactions et photos selfie sont également supprimés.",
+    "Nous recommandons de supprimer votre contenu de groupe avant de supprimer votre compte.",
+    "Votre nom d'affichage et votre icône seront retirés des listes de membres des groupes."
+  ],
+  "stepsTitle": "Comment supprimer votre compte dans l'application",
+  "stepsIosTitle": "iPhone / iPad (iOS)",
+  "stepsIos": [
+    "Ouvrez Wellsy et appuyez sur l'onglet Profil en bas.",
+    "Appuyez sur l'icône Paramètres (engrenage) en haut à droite.",
+    "Appuyez sur la section Compte.",
+    "Appuyez sur Supprimer le compte.",
+    "Lisez la boîte de dialogue de confirmation et appuyez sur Supprimer.",
+    "Vous serez automatiquement déconnecté une fois la suppression terminée."
+  ],
+  "stepsAndroidTitle": "Android",
+  "stepsAndroid": [
+    "Ouvrez Wellsy et appuyez sur l'onglet Profil en bas.",
+    "Appuyez sur l'icône Paramètres (engrenage) en haut à droite.",
+    "Appuyez sur la section Compte.",
+    "Appuyez sur Supprimer le compte.",
+    "Lisez la boîte de dialogue de confirmation et appuyez sur Supprimer.",
+    "Vous serez automatiquement déconnecté une fois la suppression terminée."
+  ],
+  "contactTitle": "Vous ne pouvez pas accéder à l'application ?",
+  "contactBody": "Si vous ne pouvez pas accéder à l'application, envoyez-nous un e-mail depuis votre adresse e-mail enregistrée avec une demande de suppression de compte. Nous nous efforçons de répondre dans les 3 à 5 jours ouvrables.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "timelineTitle": "Calendrier de suppression",
+  "timelineItems": [
+    "Immédiatement : les identifiants Firebase Authentication sont invalidés.",
+    "Après confirmation : les Cloud Functions (deleteUserData) commencent à supprimer les données Firestore et Storage.",
+    "Les données requises par la loi applicable sont conservées conformément aux obligations légales."
+  ],
+  "privacyLinkText": "Voir Politique de confidentialité § 10 (Suppression de compte et des données)"
+}

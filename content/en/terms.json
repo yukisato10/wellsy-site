@@ -1,0 +1,195 @@
+{
+  "title": "Terms of Service",
+  "lastUpdated": "Last updated: June 9, 2026",
+  "description": "Wellsy Terms of Service. Please read before using the app.",
+  "intro": "These Terms of Service (\"Terms\") govern your use of the health-care application \"Wellsy\" (\"Service\") operated by YUKI SATO (sole proprietor, \"Operator\"). By installing or using the Service you agree to these Terms.",
+  "sections": [
+    {
+      "heading": "1. Definitions",
+      "numbered": [
+        "\"Service\": the Wellsy mobile app, Cloud Functions, push notifications, website, and related services.",
+        "\"User\": any individual who creates an account and agrees to these Terms.",
+        "\"User Content\": food photos, profile pictures, selfie photos, text, and any other content you submit.",
+        "\"Group Feature\": functionality allowing users to form groups and share health data.",
+        "\"AI Feature\": food image/text analysis via OpenAI API called through Cloud Functions (asia-northeast1).",
+        "\"ML Kit OCR\": Google's on-device OCR for reading nutrition labels (no external server calls).",
+        "\"Health Data\": food logs, weight, body fat, sleep records, and related health information.",
+        "\"Premium Service\": paid subscription features planned for the future (not yet available)."
+      ]
+    },
+    {
+      "heading": "2. Eligibility",
+      "numbered": [
+        "You must be at least 13 years old to use the Service.",
+        "Users under 18 require parental/guardian consent.",
+        "US residents: users under 13 are prohibited under COPPA.",
+        "EU/EEA residents: users under 16 (or 13 in some member states) require parental consent.",
+        "Korean residents: users under 14 may not use the Service."
+      ]
+    },
+    {
+      "heading": "3. Account Registration",
+      "numbered": [
+        "Sign-in methods (all via Firebase Authentication): Apple Sign In, Google Sign In, Email/Password.",
+        "You represent that all registration information is accurate, current, and complete.",
+        "We may refuse registration if you previously violated these Terms, provided false information, or do not meet age requirements.",
+        "Keep your credentials confidential. Do not share, lend, or transfer them.",
+        "Report unauthorised access immediately to wellsy.support@gmail.com.",
+        "Creating multiple accounts for the same person is generally prohibited."
+      ]
+    },
+    {
+      "heading": "4. Service Features",
+      "bullets": [
+        "Food logging (including AI analysis and ML Kit OCR for nutrition labels)",
+        "Weight and body fat tracking with graphs",
+        "Sleep logging and analysis",
+        "Group creation, joining, and health-data sharing",
+        "Comments, reactions, and selfie reactions within groups",
+        "Content reporting and user blocking",
+        "Streak (continuous logging) tracking",
+        "Push and local notification reminders",
+        "Premium features (planned for the future)"
+      ],
+      "note": "Backend: Google Firebase (project ID: wellsy-53ae4, Cloud Functions: asia-northeast1)."
+    },
+    {
+      "heading": "5. AI Feature – Disclaimer",
+      "numbered": [
+        "The AI food analysis sends your food photo or text to OpenAI, Inc. (USA) via Cloud Functions.",
+        "Usage limits: 2 analyses/day (free); 10/day planned for premium.",
+        "Results are estimates. Accuracy is not guaranteed.",
+        "AI output is for informational purposes only — not medical advice.",
+        "Downtime or changes by OpenAI may temporarily affect availability; Operator is not liable."
+      ]
+    },
+    {
+      "heading": "6. Health Information Disclaimer",
+      "numbered": [
+        "The Service is a health-management aid, not a substitute for medical care or diagnosis.",
+        "Consult a doctor, dietitian, or health professional before making dietary or health decisions.",
+        "The Operator is not liable for health issues arising from actions taken based on Service output."
+      ]
+    },
+    {
+      "heading": "7. Group Feature",
+      "numbered": [
+        "Join via a 6-character invite code. Max 20 members per group.",
+        "Free plan: up to 3 groups. Premium: unlimited (planned).",
+        "Group posts are automatically deleted 24 hours after posting (via Cloud Functions).",
+        "Comments: max 100 characters, max 30 per post.",
+        "Reactions: 5 types; optional selfie photo attachment.",
+        "Post authors may delete their own posts.",
+        "By joining a group you consent to your display name, profile picture, and activity status being visible to members.",
+        "You may report inappropriate content or block other users.",
+        "Operator may remove content, remove members, or dissolve groups if violations are found."
+      ]
+    },
+    {
+      "heading": "8. User Content & Licence",
+      "numbered": [
+        "You represent that your content is lawful and does not infringe third-party rights.",
+        "You retain ownership of your User Content.",
+        "You grant Operator a worldwide, non-exclusive, royalty-free licence to use your content solely to provide and improve the Service.",
+        "This licence terminates when your account and content are deleted.",
+        "Do not copy, redistribute, or repurpose other users' content beyond normal Service use."
+      ]
+    },
+    {
+      "heading": "9. Prohibited Conduct",
+      "numbered": [
+        "Violating applicable laws or public order",
+        "Infringing intellectual property, privacy, or other rights of the Operator or third parties",
+        "Impersonating another user or submitting false information",
+        "Unauthorised access, reverse engineering, or tampering with the Service",
+        "Disrupting Service operations (e.g., excessive requests, DDoS)",
+        "Spam or unsolicited messaging",
+        "Harassment, threats, or discriminatory conduct toward other users",
+        "Uploading or sharing another person's photo or video without their consent",
+        "Abusing the report feature (repeatedly submitting false reports)",
+        "Illegal activity (drug sales, fraud, MLM, etc.)",
+        "Posting discriminatory, defamatory, violent, or sexually explicit content",
+        "Commercial use of the Service without prior written consent from the Operator",
+        "Any other conduct the Operator reasonably deems inappropriate"
+      ]
+    },
+    {
+      "heading": "10. Intellectual Property",
+      "numbered": [
+        "All intellectual property in the Service (code, design, trademark \"Wellsy\", etc.) belongs to the Operator or its licensors.",
+        "You may not copy, modify, distribute, or sell Service content without prior written consent.",
+        "Feedback you provide may be used by Operator without compensation."
+      ]
+    },
+    {
+      "heading": "11. Premium Billing",
+      "numbered": [
+        "Wellsy may use RevenueCat to manage subscription status and purchases. Actual payments are processed by the Apple App Store or Google Play.",
+        "Any changes to billing terms will be announced and these Terms updated in advance."
+      ]
+    },
+    {
+      "heading": "12. Privacy",
+      "body": "Your personal data is handled according to our Privacy Policy (https://wellsy.app/en/privacy), which forms part of these Terms."
+    },
+    {
+      "heading": "13. Disclaimers",
+      "numbered": [
+        "The Service is provided \"as is\" without warranties of fitness for purpose, accuracy, or availability.",
+        "Operator is not liable (except for wilful misconduct or gross negligence) for Service interruptions, data loss, third-party attacks, or inaccurate AI output.",
+        "Operator is not responsible for disputes between users."
+      ]
+    },
+    {
+      "heading": "14. Limitation of Liability",
+      "numbered": [
+        "Operator's maximum aggregate liability for Service-related claims is the total fees you paid in the 3 months preceding the incident. While the Service is free, the cap is JPY 1,000.",
+        "Mandatory consumer protection rights are not affected.",
+        "Applicable mandatory laws may override this section for users outside Japan."
+      ]
+    },
+    {
+      "heading": "15. Service Changes & Termination",
+      "numbered": [
+        "Material changes will be notified at least 14 days in advance (30 days for adverse changes).",
+        "Operator may suspend the Service for maintenance, security, or force majeure without prior notice.",
+        "Operator will provide at least 30 days' notice before shutting down the Service."
+      ]
+    },
+    {
+      "heading": "16. Account Suspension & Termination",
+      "numbered": [
+        "Operator may suspend or permanently ban accounts for violations of these Terms, fraudulent activity, or other reasonable grounds.",
+        "To appeal a suspension, contact wellsy.support@gmail.com."
+      ]
+    },
+    {
+      "heading": "17. Account Deletion",
+      "numbered": [
+        "To delete your account: in-app Profile → Settings → Account → Delete Account, or email wellsy.support@gmail.com.",
+        "Deletion triggers Cloud Functions (deleteUserData) to remove your Firebase data.",
+        "Deleted data cannot be recovered.",
+        "Delete your group posts/comments before deleting your account if desired.",
+        "Cancel any future premium subscription before deleting your account."
+      ]
+    },
+    {
+      "heading": "18. Governing Law & Jurisdiction",
+      "numbered": [
+        "These Terms are governed by the laws of Japan.",
+        "Disputes will first be resolved through good-faith negotiation.",
+        "Unresolved disputes will be submitted to the exclusive jurisdiction of the Tokyo District Court.",
+        "EU/EEA residents retain rights under applicable EU mandatory consumer-protection laws.",
+        "Korean residents retain rights under applicable Korean mandatory laws."
+      ]
+    },
+    {
+      "heading": "Contact",
+      "bullets": [
+        "Operator: YUKI SATO",
+        "Email: wellsy.support@gmail.com",
+        "Languages: Japanese, English"
+      ]
+    }
+  ]
+}

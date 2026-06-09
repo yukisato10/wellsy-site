@@ -1,0 +1,59 @@
+{
+  "title": "Konto löschen",
+  "description": "Bitte lesen Sie Folgendes sorgfältig durch, bevor Sie Ihr Wellsy-Konto löschen. Gelöschte Daten können nicht wiederhergestellt werden.",
+  "warningTitle": "Bevor Sie fortfahren",
+  "warningItems": [
+    "Alle Daten werden dauerhaft gelöscht und können nicht wiederhergestellt werden.",
+    "Wenn Sie Inhalte aus Gruppen entfernen möchten, löschen Sie diese bitte selbst, bevor Sie Ihr Konto löschen.",
+    "Wenn Sie ein zukünftiges Premium-Abonnement haben, kündigen Sie es im App Store oder Google Play Ihres Geräts, bevor Sie Ihr Konto löschen."
+  ],
+  "deletedDataTitle": "Was wird gelöscht",
+  "deletedDataNote": "Die Kontolöschung löst Cloud Functions (deleteUserData) aus, die folgende Daten aus Firebase (Cloud Firestore & Storage) entfernen.",
+  "deletedData": [
+    { "icon": "🍽️", "label": "Ernährungsprotokolle", "detail": "Mahlzeitenname, Zutaten, Kalorien, Makronährstoffe, KI-Kommentare, Notizen" },
+    { "icon": "📷", "label": "Lebensmittelfotos", "detail": "In Firebase Storage gespeicherte Fotos" },
+    { "icon": "⚖️", "label": "Gewichts- und Körperfettprotokolle", "detail": "Alle Messdatensätze" },
+    { "icon": "😴", "label": "Schlafprotokolle", "detail": "Schlafenszeit, Aufwachzeit, Schlafdauer" },
+    { "icon": "👤", "label": "Kontoinformationen", "detail": "Anzeigename, E-Mail, Profilbild, Einstellungen" },
+    { "icon": "🔔", "label": "Benachrichtigungseinstellungen & FCM-Token", "detail": "Push-Benachrichtigungs-Gerätetoken" },
+    { "icon": "👥", "label": "Gruppendaten", "detail": "Gruppeneinträge, Kommentare, Reaktionen (einschließlich Selfie-Fotos), Gruppeneinstellungen" },
+    { "icon": "🚫", "label": "Meldungen & Sperren", "detail": "IDs gemeldeter Inhalte, IDs gesperrter Benutzer" },
+    { "icon": "🏃", "label": "Streak-Daten", "detail": "Anzahl aufeinanderfolgender Protokolleinträge und Streak-Guthaben" }
+  ],
+  "groupNoteTitle": "Gruppeneinträge, Kommentare & Reaktionen",
+  "groupNoteItems": [
+    "Gruppeneinträge werden automatisch nach 24 Std. gelöscht. Die Kontolöschung löst ebenfalls eine Bereinigung aus.",
+    "Kommentare, Reaktionen und Selfie-Fotos werden ebenfalls gelöscht.",
+    "Wir empfehlen, Ihre Gruppeninhalte vor der Kontolöschung zu löschen.",
+    "Ihr Anzeigename und Ihr Symbol werden aus den Gruppen-Mitgliederlisten entfernt."
+  ],
+  "stepsTitle": "So löschen Sie Ihr Konto in der App",
+  "stepsIosTitle": "iPhone / iPad (iOS)",
+  "stepsIos": [
+    "Öffnen Sie Wellsy und tippen Sie unten auf den Profil-Tab.",
+    "Tippen Sie auf das Einstellungssymbol (Zahnrad) in der oberen rechten Ecke.",
+    "Tippen Sie auf den Bereich Konto.",
+    "Tippen Sie auf Konto löschen.",
+    "Lesen Sie den Bestätigungsdialog und tippen Sie auf Löschen.",
+    "Sie werden nach Abschluss der Löschung automatisch abgemeldet."
+  ],
+  "stepsAndroidTitle": "Android",
+  "stepsAndroid": [
+    "Öffnen Sie Wellsy und tippen Sie unten auf den Profil-Tab.",
+    "Tippen Sie auf das Einstellungssymbol (Zahnrad) in der oberen rechten Ecke.",
+    "Tippen Sie auf den Bereich Konto.",
+    "Tippen Sie auf Konto löschen.",
+    "Lesen Sie den Bestätigungsdialog und tippen Sie auf Löschen.",
+    "Sie werden nach Abschluss der Löschung automatisch abgemeldet."
+  ],
+  "contactTitle": "Kein Zugang zur App?",
+  "contactBody": "Wenn Sie keinen Zugang zur App haben, senden Sie uns eine E-Mail von Ihrer registrierten E-Mail-Adresse mit einer Anfrage zur Kontolöschung. Wir bemühen uns, innerhalb von 3-5 Werktagen zu antworten.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "timelineTitle": "Löschzeitplan",
+  "timelineItems": [
+    "Sofort: Firebase Authentication-Anmeldeinformationen werden ungültig gemacht.",
+    "Nach Bestätigung: Cloud Functions (deleteUserData) beginnen mit dem Entfernen von Firestore- und Storage-Daten.",
+    "Gesetzlich vorgeschriebene Daten werden entsprechend den gesetzlichen Anforderungen aufbewahrt."
+  ],
+  "privacyLinkText": "Siehe Datenschutzerklärung § 10 (Kontolöschung & Datenlöschung)"
+}

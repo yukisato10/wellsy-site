@@ -1,0 +1,58 @@
+{
+  "title": "Hinweis zu gewerblichen Transaktionen",
+  "lastUpdated": "Zuletzt aktualisiert: 9. Juni 2026",
+  "description": "Diese Seite ist gemäß dem japanischen Gesetz über spezifizierte gewerbliche Transaktionen erforderlich.",
+  "intro": "Diese Offenlegung erfolgt gemäß dem japanischen Gesetz über spezifizierte gewerbliche Transaktionen (Artikel 11, Versandhandel).\n\nDer Dienst verfügt derzeit über keine kostenpflichtigen Funktionen. Ein Premium-Abonnement ist für die Zukunft über den App Store und Google Play geplant. Diese Seite wird aktualisiert, wenn die Abrechnung eingeführt wird.",
+  "sections": [
+    {
+      "heading": "Verkäuferinformationen",
+      "table": {
+        "headers": ["Angabe", "Details"],
+        "rows": [
+          ["Verkäufer", "YUKI SATO"],
+          ["Adresse", "Auf Anfrage erhältlich (gemäß geltendem Recht)"],
+          ["Telefon", "Auf Anfrage erhältlich. Bitte kontaktieren Sie uns per E-Mail."],
+          ["E-Mail", "wellsy.support@gmail.com"],
+          ["Dienst-URL", "https://wellsy.app"]
+        ]
+      }
+    },
+    {
+      "heading": "Verkaufsbedingungen",
+      "table": {
+        "headers": ["Angabe", "Details"],
+        "rows": [
+          ["Preis", "Basisplan: Kostenlos (aktuell)\nPremium-Plan (geplant): Im App Store / Google Play zum Zeitpunkt des Kaufs angezeigter Preis (inkl. Steuern)"],
+          ["Zusätzliche Gebühren", "Internetzugang und Datenübertragungsgebühren (vom Benutzer zu tragen)"],
+          ["Zahlungsmethode", "App Store (iPhone/iPad): Zahlung über Apple ID\nGoogle Play (Android): Zahlung über Google-Konto"],
+          ["Abrechnungszeitpunkt", "Sofort beim Kauf berechnet; anschließend automatisch zum jeweiligen Verlängerungsdatum"],
+          ["Dienstbereitstellung", "Premium-Funktionen nach Zahlung sofort verfügbar (sobald die Abrechnung eingeführt wird)"],
+          ["Rückgaberecht", "Aufgrund des digitalen Charakters der Inhalte sind Rückerstattungen nach dem Kauf grundsätzlich nicht möglich. Bitte wenden Sie sich für Rückerstattungsanfragen auf Store-Ebene an Apple (reportaproblem.apple.com) oder Google Play."],
+          ["Systemanforderungen", "iOS 16.0 oder höher / Android 9.0 oder höher"],
+          ["Kostenlose Testversion", "Beim Launch kann eine kostenlose Testversion angeboten werden. Wird diese nicht vor Ablauf des Testzeitraums gekündigt, wird das Abonnement automatisch in ein kostenpflichtiges umgewandelt."]
+        ]
+      }
+    },
+    {
+      "heading": "Kündigung (Zur künftigen Referenz)",
+      "subsections": [
+        {
+          "heading": "iPhone / iPad",
+          "body": "Einstellungen → Ihr Name → Abonnements → Wellsy → Abonnement kündigen"
+        },
+        {
+          "heading": "Android",
+          "body": "Google Play → Menü (☰) → Abonnements → Wellsy → Kündigen"
+        }
+      ],
+      "note": "Kündigen Sie vor dem nächsten Verlängerungsdatum. Der Zugang bleibt bis zum Ende des Abrechnungszeitraums bestehen. Sie müssen über den Geräteshop kündigen; eine E-Mail an den Betreiber kündigt das Abonnement nicht."
+    },
+    {
+      "heading": "Kontakt",
+      "bullets": [
+        "E-Mail: wellsy.support@gmail.com",
+        "Zeiten: Mo–Fr 10:00–18:00 JST"
+      ]
+    }
+  ]
+}

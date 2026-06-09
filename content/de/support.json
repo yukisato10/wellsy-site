@@ -1,0 +1,130 @@
+{
+  "title": "Support-Center",
+  "description": "Finden Sie Antworten auf häufig gestellte Fragen zu Wellsy.",
+  "contactEmail": "wellsy.support@gmail.com",
+  "contactHours": "Mo-Fr 10:00-18:00 JST",
+  "responseTime": "In der Regel innerhalb von 2-3 Werktagen",
+  "noReplyNote": "Hinweis: Diese E-Mail-Adresse kann sich in Zukunft ändern. Prüfen Sie stets diese Seite für die aktuellen Kontaktdaten.",
+  "categories": [
+    {
+      "id": "account",
+      "icon": "👤",
+      "label": "Konto & Anmeldung",
+      "faqs": [
+        {
+          "q": "Wie lösche ich mein Konto?",
+          "a": "In der App: Profil-Tab → Einstellungen (Zahnrad-Symbol) → Konto → Konto löschen. Alle Daten (Ernährungsprotokolle, Gewicht, Schlaf, Gruppeninhalte, Bilder) werden dauerhaft gelöscht und können nicht wiederhergestellt werden.",
+          "link": { "href": "/de/delete-account", "label": "Vollständige Löschanleitung anzeigen" }
+        },
+        {
+          "q": "Wie setze ich mein Passwort zurück?",
+          "a": "Tippen Sie auf dem Anmeldebildschirm auf 'Passwort vergessen' und geben Sie Ihre registrierte E-Mail-Adresse ein. Sie erhalten einen Reset-Link.\n\nWenn Sie sich mit Apple oder Google angemeldet haben, wird kein Passwort benötigt.",
+          "link": null
+        },
+        {
+          "q": "Die Apple / Google-Anmeldung funktioniert nicht. Was soll ich tun?",
+          "a": "Versuchen Sie Folgendes:\n\n1. Überprüfen Sie Ihre Apple-ID oder Google-Kontoeinstellungen auf dem Gerät\n2. Schließen Sie die App vollständig und öffnen Sie sie erneut\n3. Starten Sie Ihr Gerät neu\n\nWenn das Problem weiterhin besteht, wenden Sie sich an wellsy.support@gmail.com mit Angabe Ihres Betriebssystems und der App-Version.",
+          "link": null
+        },
+        {
+          "q": "Wie übertrage ich meine Daten auf ein neues Gerät?",
+          "a": "Melden Sie sich einfach mit demselben Konto (Apple ID, Google-Konto oder E-Mail) auf dem neuen Gerät an. Alle Daten werden automatisch synchronisiert.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "icon": "🗑️",
+      "label": "Daten & Datenschutz",
+      "faqs": [
+        {
+          "q": "Wie lösche ich bestimmte Protokolle?",
+          "a": "Öffnen Sie den Detailbildschirm des Protokolls und tippen Sie auf die Löschen-Schaltfläche. Um alles zu löschen, löschen Sie Ihr Konto.",
+          "link": { "href": "/de/delete-account", "label": "Anleitung zur Kontolöschung" }
+        },
+        {
+          "q": "Was passiert mit meinen Daten, wenn ich mein Konto lösche?",
+          "a": "Die Kontolöschung löst unsere Cloud Functions (deleteUserData) aus, die alle Ihre Daten aus Firebase entfernen. Dies ist unwiderruflich.",
+          "link": null
+        },
+        {
+          "q": "Kann ich meine Daten exportieren?",
+          "a": "Der In-App-Export befindet sich in der Entwicklung. Um Ihr DSGVO- oder CCPA-Datenübertragbarkeitsrecht auszuüben, senden Sie eine E-Mail an wellsy.support@gmail.com (Betreff: Datenportabilitätsanfrage).",
+          "link": null
+        },
+        {
+          "q": "Wie beantrage ich Zugang, Berichtigung oder Löschung meiner personenbezogenen Daten?",
+          "a": "Senden Sie eine E-Mail von Ihrer registrierten Adresse an wellsy.support@gmail.com (Betreff: Datenschutzanfrage). Für DSGVO-Anfragen fügen Sie 'DSGVO' in der Betreffzeile ein.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "features",
+      "icon": "📱",
+      "label": "Funktionen",
+      "faqs": [
+        {
+          "q": "Das KI-Analyseergebnis scheint ungenau. Was kann ich tun?",
+          "a": "Die KI-Lebensmittelanalyse ist eine Schätzung der OpenAI API. Die Genauigkeit hängt von Fotowinkel, Beleuchtung und Art des Gerichts ab.\n\nTipps für bessere Ergebnisse:\n- Fotografieren Sie von direkt oben oder im 45-Grad-Winkel\n- Fotografieren Sie gemischte Gerichte getrennt\n\nFür präzise Nährwertinformationen prüfen Sie die Lebensmittelverpackung oder konsultieren Sie einen Ernährungsberater. Diese Funktion ist nicht für medizinische Zwecke.",
+          "link": null
+        },
+        {
+          "q": "Wie viele KI-Analysen kann ich pro Tag nutzen?",
+          "a": "Kostenloser Plan: 2 Analysen pro Tag. Der Zähler wird um Mitternacht JST zurückgesetzt. Premium (geplant): 10 pro Tag.",
+          "link": null
+        },
+        {
+          "q": "Ich erhalte keine Benachrichtigungen. Was soll ich tun?",
+          "a": "iOS: Einstellungen → Mitteilungen → Wellsy → Mitteilungen erlauben (aktivieren)\nAndroid: Einstellungen → Apps → Wellsy → Benachrichtigungen (aktivieren)\n\nStarten Sie die App nach dem Ändern der Einstellungen neu. Wenn Probleme weiterbestehen, wenden Sie sich an wellsy.support@gmail.com.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "group",
+      "icon": "👥",
+      "label": "Gruppen",
+      "faqs": [
+        {
+          "q": "Wie verlasse ich eine Gruppe?",
+          "a": "Gruppen → Gruppe auswählen → Gruppeneinstellungen → Gruppe verlassen. Wir empfehlen, zuerst Ihre Einträge/Kommentare zu löschen.",
+          "link": null
+        },
+        {
+          "q": "Ich wurde eingeladen, kann aber keiner Gruppe beitreten.",
+          "a": "Prüfen Sie:\n1. Der Einladungscode (6 Zeichen) ist korrekt eingegeben\n2. Der Code ist nicht abgelaufen (bitten Sie den Gruppenadmin, einen neuen auszustellen)\n3. Sie haben das 3-Gruppen-Limit nicht erreicht (kostenloser Plan)\n4. Ihre Beitrittsanfrage wartet möglicherweise auf Admin-Genehmigung",
+          "link": null
+        },
+        {
+          "q": "Wie lange sind Gruppeneinträge sichtbar?",
+          "a": "Gruppeneinträge werden durch unsere Cloud Functions automatisch 24 Stunden nach dem Posten gelöscht. Kommentare, Reaktionen und Selfie-Fotos werden dabei ebenfalls gelöscht.",
+          "link": null
+        },
+        {
+          "q": "Ein Gruppenmitglied hat unangemessene Inhalte gepostet. Was kann ich tun?",
+          "a": "Nutzen Sie die In-App-Meldefunktion oder senden Sie eine E-Mail an wellsy.support@gmail.com (Betreff: Unangemessenen Inhalt melden) mit der Inhaltsbeschreibung und dem Datum.",
+          "link": null
+        }
+      ]
+    },
+    {
+      "id": "premium",
+      "icon": "⭐",
+      "label": "Premium & Abrechnung",
+      "faqs": [
+        {
+          "q": "Gibt es derzeit einen Premium-Plan?",
+          "a": "Noch nicht. Ein Premium-Abonnementplan ist für die Zukunft über den App Store und Google Play geplant. Wir werden Sie benachrichtigen, wenn er verfügbar ist.",
+          "link": null
+        },
+        {
+          "q": "Wie kündige ich ein Abonnement? (Zur künftigen Referenz)",
+          "a": "iPhone/iPad: Einstellungen → Ihr Name → Abonnements → Wellsy → Abonnement kündigen\n\nAndroid: Google Play → Menü → Abonnements → Wellsy → Kündigen\n\nKündigen Sie vor dem nächsten Verlängerungsdatum. Sie behalten den Zugriff bis zum Ende des Abrechnungszeitraums.",
+          "link": null
+        }
+      ]
+    }
+  ]
+}
