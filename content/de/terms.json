@@ -14,7 +14,7 @@
         "'KI-Funktion': Analyse von Lebensmittelbildern/-texten über OpenAI API, aufgerufen über Cloud Functions (asia-northeast1).",
         "'ML Kit OCR': Googles geräteseitige OCR zum Lesen von Nährwertkennzeichnungen (keine externen Serveraufrufe).",
         "'Gesundheitsdaten': Ernährungsprotokolle, Gewicht, Körperfett, Schlafaufzeichnungen und zugehörige Gesundheitsinformationen.",
-        "'Premium-Dienst': kostenpflichtige Abonnement-Funktionen, die für die Zukunft geplant sind (noch nicht verfügbar)."
+        "'Premium-Dienst': zusätzliche Funktionen, die über ein Monats- oder Jahresabonnement verfügbar sind."
       ]
     },
     {
@@ -49,7 +49,7 @@
         "Inhaltsmeldefunktion und Benutzersperre",
         "Streak-Verfolgung (kontinuierliche Protokollierung)",
         "Push- und lokale Benachrichtigungserinnerungen",
-        "Premium-Funktionen (für die Zukunft geplant)"
+        "Premium-Funktionen (Monats- und Jahrespläne verfügbar)"
       ],
       "note": "Backend: Google Firebase (Projekt-ID: wellsy-53ae4, Cloud Functions: asia-northeast1)."
     },
@@ -57,7 +57,7 @@
       "heading": "5. KI-Funktion – Haftungsausschluss",
       "numbered": [
         "Die KI-Lebensmittelanalyse sendet Ihr Lebensmittelfoto oder Ihren Text über Cloud Functions an OpenAI, Inc. (USA).",
-        "Nutzungslimits: 2 Analysen/Tag (kostenlos); 10/Tag für Premium geplant.",
+        "Nutzungslimits: Kostenloser Plan – 1 Fotoanalyse/Tag und 1 Textanalyse/Tag (jeweils); Premium – unbegrenzt.",
         "Die Ergebnisse sind Schätzungen. Genauigkeit wird nicht garantiert.",
         "Die KI-Ausgabe dient nur zu Informationszwecken – sie stellt keine medizinische Beratung dar.",
         "Ausfälle oder Änderungen seitens OpenAI können die Verfügbarkeit vorübergehend beeinträchtigen; der Betreiber haftet hierfür nicht."
@@ -74,8 +74,8 @@
     {
       "heading": "7. Gruppenfunktion",
       "numbered": [
-        "Beitritt über einen 6-stelligen Einladungscode. Max. 20 Mitglieder pro Gruppe.",
-        "Kostenloser Plan: bis zu 3 Gruppen. Premium: unbegrenzt (geplant).",
+        "Beitritt über einen 6-stelligen Einladungscode. Max. 100 Mitglieder pro Gruppe.",
+        "Kostenloser Plan: bis zu 1 Gruppe. Premium: unbegrenzt.",
         "Gruppeneinträge werden automatisch 24 Stunden nach dem Posten gelöscht (über Cloud Functions).",
         "Kommentare: max. 100 Zeichen, max. 30 pro Eintrag.",
         "Reaktionen: 5 Typen; optionales Selfie-Foto anhängbar.",
@@ -170,7 +170,7 @@
         "Die Löschung löst Cloud Functions (deleteUserData) aus, um Ihre Firebase-Daten zu entfernen.",
         "Gelöschte Daten können nicht wiederhergestellt werden.",
         "Löschen Sie Ihre Gruppeneinträge/-kommentare vor der Kontolöschung, falls gewünscht.",
-        "Kündigen Sie zukünftige Premium-Abonnements vor der Kontolöschung."
+        "Kündigen Sie aktive Premium-Abonnements vor der Kontolöschung."
       ]
     },
     {

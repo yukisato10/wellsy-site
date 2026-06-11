@@ -72,7 +72,7 @@
         },
         {
           "q": "How many AI analyses can I use per day?",
-          "a": "Free plan: 2 analyses per day. The count resets at midnight JST. Premium (planned): 10 per day.",
+          "a": "Free plan: 1 photo analysis/day and 1 text analysis/day (each). The count resets at midnight JST. Premium plan: unlimited.",
           "link": null
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "q": "I was invited but can't join a group.",
-          "a": "Check:\n① The invite code (6 chars) is entered correctly\n② The code hasn't expired (ask the group admin to re-issue)\n③ You haven't reached the 3-group limit (free plan)\n④ Your join request may be pending admin approval",
+          "a": "Check:\n① The invite code (6 chars) is entered correctly\n② The code hasn't expired (ask the group admin to re-issue)\n③ You haven't reached the 1-group limit (free plan)\n④ Your join request may be pending admin approval",
           "link": null
         },
         {
@@ -115,12 +115,12 @@
       "label": "Premium & Billing",
       "faqs": [
         {
-          "q": "Is there a premium plan available now?",
-          "a": "Not yet. A premium subscription plan is planned for the future via App Store and Google Play. We'll notify you when it launches.",
+          "q": "What features does the Premium plan include?",
+          "a": "Premium plan benefits:\n\n· AI food analysis (photo & text): unlimited\n· AI correction & re-analysis feature\n· Full history access (all time)\n· Unlimited group membership\n· Unrestricted nutrition goal adjustments\n· Full streak count display\n\nAvailable as monthly or annual subscription via App Store (iOS) or Google Play (Android).",
           "link": null
         },
         {
-          "q": "How do I cancel a subscription? (Future reference)",
+          "q": "How do I cancel my subscription?",
           "a": "iPhone/iPad: Settings → your name → Subscriptions → Wellsy → Cancel Subscription\n\nAndroid: Google Play → Menu → Subscriptions → Wellsy → Cancel\n\nCancel before the next renewal date. You retain access until the end of the billing period.",
           "link": null
         }

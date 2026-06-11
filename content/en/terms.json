@@ -14,7 +14,7 @@
         "\"AI Feature\": food image/text analysis via OpenAI API called through Cloud Functions (asia-northeast1).",
         "\"ML Kit OCR\": Google's on-device OCR for reading nutrition labels (no external server calls).",
         "\"Health Data\": food logs, weight, body fat, sleep records, and related health information.",
-        "\"Premium Service\": paid subscription features planned for the future (not yet available)."
+        "\"Premium Service\": additional features available via monthly or annual subscription."
       ]
     },
     {
@@ -49,7 +49,7 @@
         "Content reporting and user blocking",
         "Streak (continuous logging) tracking",
         "Push and local notification reminders",
-        "Premium features (planned for the future)"
+        "Premium features (monthly and annual plans available)"
       ],
       "note": "Backend: Google Firebase (project ID: wellsy-53ae4, Cloud Functions: asia-northeast1)."
     },
@@ -57,7 +57,7 @@
       "heading": "5. AI Feature – Disclaimer",
       "numbered": [
         "The AI food analysis sends your food photo or text to OpenAI, Inc. (USA) via Cloud Functions.",
-        "Usage limits: 2 analyses/day (free); 10/day planned for premium.",
+        "Usage limits: free plan — 1 photo analysis/day and 1 text analysis/day (each); Premium — unlimited.",
         "Results are estimates. Accuracy is not guaranteed.",
         "AI output is for informational purposes only — not medical advice.",
         "Downtime or changes by OpenAI may temporarily affect availability; Operator is not liable."
@@ -74,8 +74,8 @@
     {
       "heading": "7. Group Feature",
       "numbered": [
-        "Join via a 6-character invite code. Max 20 members per group.",
-        "Free plan: up to 3 groups. Premium: unlimited (planned).",
+        "Join via a 6-character invite code. Max 100 members per group.",
+        "Free plan: up to 1 group. Premium: unlimited.",
         "Group posts are automatically deleted 24 hours after posting (via Cloud Functions).",
         "Comments: max 100 characters, max 30 per post.",
         "Reactions: 5 types; optional selfie photo attachment.",
@@ -143,7 +143,7 @@
     {
       "heading": "14. Limitation of Liability",
       "numbered": [
-        "Operator's maximum aggregate liability for Service-related claims is the total fees you paid in the 3 months preceding the incident. While the Service is free, the cap is JPY 1,000.",
+        "Operator's maximum aggregate liability for Service-related claims is the total fees you paid in the 3 months preceding the incident. For free-plan users, the cap is JPY 1,000.",
         "Mandatory consumer protection rights are not affected.",
         "Applicable mandatory laws may override this section for users outside Japan."
       ]
@@ -170,7 +170,7 @@
         "Deletion triggers Cloud Functions (deleteUserData) to remove your Firebase data.",
         "Deleted data cannot be recovered.",
         "Delete your group posts/comments before deleting your account if desired.",
-        "Cancel any future premium subscription before deleting your account."
+        "Cancel any active premium subscription before deleting your account."
       ]
     },
     {

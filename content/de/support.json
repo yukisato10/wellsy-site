@@ -72,7 +72,7 @@
         },
         {
           "q": "Wie viele KI-Analysen kann ich pro Tag nutzen?",
-          "a": "Kostenloser Plan: 2 Analysen pro Tag. Der Zähler wird um Mitternacht JST zurückgesetzt. Premium (geplant): 10 pro Tag.",
+          "a": "Kostenloser Plan: 1 Fotoanalyse/Tag und 1 Textanalyse/Tag (jeweils). Der Zähler wird um Mitternacht JST zurückgesetzt. Premium-Plan: unbegrenzt.",
           "link": null
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "q": "Ich wurde eingeladen, kann aber keiner Gruppe beitreten.",
-          "a": "Prüfen Sie:\n1. Der Einladungscode (6 Zeichen) ist korrekt eingegeben\n2. Der Code ist nicht abgelaufen (bitten Sie den Gruppenadmin, einen neuen auszustellen)\n3. Sie haben das 3-Gruppen-Limit nicht erreicht (kostenloser Plan)\n4. Ihre Beitrittsanfrage wartet möglicherweise auf Admin-Genehmigung",
+          "a": "Prüfen Sie:\n1. Der Einladungscode (6 Zeichen) ist korrekt eingegeben\n2. Der Code ist nicht abgelaufen (bitten Sie den Gruppenadmin, einen neuen auszustellen)\n3. Sie haben das 1-Gruppen-Limit nicht erreicht (kostenloser Plan)\n4. Ihre Beitrittsanfrage wartet möglicherweise auf Admin-Genehmigung",
           "link": null
         },
         {
@@ -115,12 +115,12 @@
       "label": "Premium & Abrechnung",
       "faqs": [
         {
-          "q": "Gibt es derzeit einen Premium-Plan?",
-          "a": "Noch nicht. Ein Premium-Abonnementplan ist für die Zukunft über den App Store und Google Play geplant. Wir werden Sie benachrichtigen, wenn er verfügbar ist.",
+          "q": "Welche Funktionen bietet der Premium-Plan?",
+          "a": "Premium-Vorteile:\n\n· KI-Lebensmittelanalyse (Foto & Text): unbegrenzt\n· KI-Korrektur- und Neuanalyse-Funktion\n· Vollständiger Verlaufszugriff (gesamte Zeit)\n· Unbegrenzte Gruppenmitgliedschaft\n· Unbegrenzte Anpassung der Ernährungsziele\n· Vollständige Streak-Anzahl\n\nVerfügbar als Monats- oder Jahresabonnement über den App Store (iOS) oder Google Play (Android).",
           "link": null
         },
         {
-          "q": "Wie kündige ich ein Abonnement? (Zur künftigen Referenz)",
+          "q": "Wie kündige ich ein Abonnement?",
           "a": "iPhone/iPad: Einstellungen → Ihr Name → Abonnements → Wellsy → Abonnement kündigen\n\nAndroid: Google Play → Menü → Abonnements → Wellsy → Kündigen\n\nKündigen Sie vor dem nächsten Verlängerungsdatum. Sie behalten den Zugriff bis zum Ende des Abrechnungszeitraums.",
           "link": null
         }

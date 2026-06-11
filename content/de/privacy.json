@@ -40,10 +40,10 @@
             "Firebase-UID (eindeutiger Bezeichner aus Firebase Authentication)",
             "FCM-Token (Gerätetoken für Push-Benachrichtigungen)",
             "Sprach- und Zeitzoneneinstellungen",
-            "Nutzungsanzahl der KI-Analyse (Cloud Firestore: users/{uid}/usage_limits)",
+            "Nutzungsanzahl der KI-Analyse (Cloud Firestore: users/{uid}/usageDaily/{yyyyMMdd})",
             "Erstellungs-/Aktualisierungszeitstempel",
             "Streak-Daten",
-            "Abonnementstatus (bei Einführung der Abrechnung)"
+            "Abonnementstatus (verwaltet über RevenueCat)"
           ]
         },
         {
@@ -56,7 +56,7 @@
         {
           "heading": "Derzeit NICHT erhobene Daten",
           "bullets": [
-            "Zahlungs-/Kreditkartendaten (Abrechnung noch nicht implementiert)",
+            "Kreditkarten- oder Zahlungsdaten (Zahlungen werden über App Store / Google Play abgewickelt; wir speichern keine Zahlungsdaten)",
             "Standortdaten",
             "Detaillierte Absturzberichte oder Nutzungsanalysen (derzeit deaktiviert)"
           ]
@@ -78,7 +78,7 @@
           ["Fehlerbehebung & Serviceverbesserung", "Berechtigte Interessen (f)"],
           ["Kundensupport", "Vertrag / Berechtigte Interessen (b)/(f)"],
           ["Einhaltung gesetzlicher Vorschriften", "Rechtliche Verpflichtung (c)"],
-          ["Abonnementverwaltung (zukünftig)", "Vertragserfüllung (b)"]
+          ["Abonnementverwaltung (über RevenueCat)", "Vertragserfüllung (b)"]
         ]
       }
     },
@@ -88,7 +88,7 @@
         "Wenn Sie die KI-Lebensmittelanalyse nutzen, wird Ihr Lebensmittelfoto oder -text über unsere Cloud Functions (Region asia-northeast1) an OpenAI, Inc. (USA) übermittelt.",
         "Es werden nur das Lebensmittelbild oder der Text übertragen – Ihre UID, Ihr Name und Ihre E-Mail werden NICHT an OpenAI gesendet.",
         "OpenAI verwendet API-Daten nicht zum Training seiner Modelle (gemäß deren Richtlinien seit März 2023).",
-        "Nutzungslimits: 2 Analysen/Tag (kostenloser Plan); 10/Tag für Premium geplant.",
+        "Nutzungslimits: Kostenloser Plan – 1 Fotoanalyse/Tag und 1 Textanalyse/Tag (jeweils); Premium – unbegrenzt.",
         "OpenAI-Datenschutzrichtlinie: https://openai.com/privacy"
       ]
     },
@@ -111,7 +111,7 @@
             "users/{uid}/meal_logs: Lebensmittelname, Zutaten, Kalorien, Makronährstoffe, Foto-URL, KI-Kommentar",
             "users/{uid}/weight_logs: Gewicht, Körperfett, Einheit",
             "users/{uid}/sleep_logs: Schlafenszeit, Aufwachzeit, Schlafdauer",
-            "users/{uid}/usage_limits: Nutzungsanzahl der KI-Analyse",
+            "users/{uid}/usageDaily/{yyyyMMdd}: tägliche Nutzungsanzahl der KI-Analyse",
             "groups/{groupId}: Gruppenname, Einladungscode, Mitgliederanzahl",
             "groups/{groupId}/sharedMeals: Einträge (24 Std. TTL), Kommentare, Reaktionen, Selfie-URLs"
           ]

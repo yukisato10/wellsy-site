@@ -72,7 +72,7 @@
         },
         {
           "q": "Combien d'analyses IA puis-je utiliser par jour ?",
-          "a": "Plan gratuit : 2 analyses par jour. Le compteur se réinitialise à minuit JST. Premium (prévu) : 10 par jour.",
+          "a": "Plan gratuit : 1 analyse photo/jour et 1 analyse texte/jour (chacune). Le compteur se réinitialise à minuit JST. Plan Premium : illimité.",
           "link": null
         },
         {
@@ -94,7 +94,7 @@
         },
         {
           "q": "J'ai été invité mais je ne peux pas rejoindre un groupe.",
-          "a": "Vérifiez :\n① Le code d'invitation (6 caractères) est saisi correctement\n② Le code n'a pas expiré (demandez à l'administrateur du groupe d'en émettre un nouveau)\n③ Vous n'avez pas atteint la limite de 3 groupes (plan gratuit)\n④ Votre demande d'adhésion est peut-être en attente d'approbation de l'administrateur",
+          "a": "Vérifiez :\n① Le code d'invitation (6 caractères) est saisi correctement\n② Le code n'a pas expiré (demandez à l'administrateur du groupe d'en émettre un nouveau)\n③ Vous n'avez pas atteint la limite de 1 groupe (plan gratuit)\n④ Votre demande d'adhésion est peut-être en attente d'approbation de l'administrateur",
           "link": null
         },
         {
@@ -115,12 +115,12 @@
       "label": "Premium et facturation",
       "faqs": [
         {
-          "q": "Y a-t-il un plan premium disponible maintenant ?",
-          "a": "Pas encore. Un plan d'abonnement premium est prévu pour l'avenir via l'App Store et Google Play. Nous vous notifierons lors de son lancement.",
+          "q": "Quelles fonctionnalités offre le plan Premium ?",
+          "a": "Avantages Premium :\n\n· Analyse IA (photo et texte) : illimitée\n· Correction IA et réanalyse\n· Accès à tout l'historique\n· Groupes illimités\n· Ajustement illimité des objectifs nutritionnels\n· Affichage du nombre exact de jours de série\n\nDisponible en abonnement mensuel ou annuel via l'App Store (iOS) ou Google Play (Android).",
           "link": null
         },
         {
-          "q": "Comment annuler un abonnement ? (Pour référence future)",
+          "q": "Comment annuler un abonnement ?",
           "a": "iPhone/iPad : Réglages → votre nom → Abonnements → Wellsy → Résilier l'abonnement\n\nAndroid : Google Play → Menu → Abonnements → Wellsy → Annuler\n\nAnnulez avant la prochaine date de renouvellement. Vous conservez l'accès jusqu'à la fin de la période de facturation.",
           "link": null
         }

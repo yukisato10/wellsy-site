@@ -40,10 +40,10 @@
             "Firebase UID：Firebase Authenticationが発行する一意のユーザー識別子",
             "FCMトークン：プッシュ通知の配信に使用するデバイス固有のトークン",
             "言語設定・タイムゾーン：アプリの表示言語およびデバイスのタイムゾーン",
-            "AI解析利用回数：日次カウント（Cloud Firestore: users/{uid}/usage_limits）",
+            "AI解析利用回数：日次カウント（Cloud Firestore: users/{uid}/usageDaily/{yyyyMMdd}）",
             "作成日時・更新日時：各データドキュメントのタイムスタンプ",
             "ストリークデータ：継続記録日数・ストリーク救済回数",
-            "購読情報：サブスクリプション状態（将来の課金機能実装後）"
+            "購読情報：サブスクリプション状態（RevenueCatを通じて管理）"
           ]
         },
         {
@@ -56,7 +56,7 @@
         {
           "heading": "4. 現在収集していない情報",
           "bullets": [
-            "決済情報・クレジットカード番号（課金機能は現時点で未実装）",
+            "クレジットカード番号等の決済情報（決済はApp Store・Google Playで処理され、当サービスでは保有しません）",
             "位置情報",
             "アプリクラッシュレポート・詳細なアクセスログ（現時点では無効）"
           ]
@@ -81,7 +81,7 @@
           ["ユーザーサポートへの対応", "契約の履行 / 正当な利益（(b)/(f)号）"],
           ["重要なお知らせの通知（規約改定・セキュリティ情報等）", "正当な利益（(f)号）"],
           ["法令遵守・法的義務の履行", "法的義務（(c)号）"],
-          ["購読・課金管理（将来の課金機能実装後）", "契約の履行（(b)号）"]
+          ["購読・課金管理（RevenueCat経由）", "契約の履行（(b)号）"]
         ]
       }
     },
@@ -91,7 +91,7 @@
         "AI食事解析機能を利用すると、食事画像またはテキストが本サービスのCloud Functions（asia-northeast1リージョン）を経由してOpenAI, Inc.（米国）のAPIサーバーへ送信されます。",
         "OpenAIへ送信されるのは食事画像またはテキストのみです。UID・氏名・メールアドレスはOpenAIに送信されません。",
         "OpenAI, Inc.はAPIデータ使用ポリシーに基づきデータを取り扱います。API経由のデータはOpenAIのモデル学習には使用されません（2023年3月以降のポリシーによる）。",
-        "AI解析は無料プランで1日2回、将来のプレミアムプランで1日10回を予定しています（Cloud Firestore: users/{uid}/usage_limitsで管理）。",
+        "AI解析の利用制限：無料プランは画像・テキストそれぞれ1日1回。プレミアムプランは無制限（Cloud Firestore: users/{uid}/usageDaily/{yyyyMMdd}で管理）。",
         "OpenAIのプライバシーポリシー：https://openai.com/privacy"
       ]
     },
@@ -118,7 +118,7 @@
             "users/{uid}/meal_logs：食事名、食材、カロリー、PFC、食事画像URL、AIコメント、メモ",
             "users/{uid}/weight_logs：体重、体脂肪率、単位",
             "users/{uid}/sleep_logs：就寝時刻、起床時刻、睡眠時間",
-            "users/{uid}/usage_limits：AI解析利用回数",
+            "users/{uid}/usageDaily/{yyyyMMdd}：AI解析日次利用回数",
             "users/{uid}/streakData：継続記録データ",
             "users/{uid}/groupSettings/{groupId}：ピン止め状態、通知設定",
             "groups/{groupId}：グループ名、招待コード、メンバー数",

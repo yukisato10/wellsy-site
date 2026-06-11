@@ -2,7 +2,7 @@
   "title": "Hinweis zu gewerblichen Transaktionen",
   "lastUpdated": "Zuletzt aktualisiert: 9. Juni 2026",
   "description": "Diese Seite ist gemäß dem japanischen Gesetz über spezifizierte gewerbliche Transaktionen erforderlich.",
-  "intro": "Diese Offenlegung erfolgt gemäß dem japanischen Gesetz über spezifizierte gewerbliche Transaktionen (Artikel 11, Versandhandel).\n\nDer Dienst verfügt derzeit über keine kostenpflichtigen Funktionen. Ein Premium-Abonnement ist für die Zukunft über den App Store und Google Play geplant. Diese Seite wird aktualisiert, wenn die Abrechnung eingeführt wird.",
+  "intro": "Diese Offenlegung erfolgt gemäß dem japanischen Gesetz über spezifizierte gewerbliche Transaktionen (Artikel 11, Versandhandel).\n\nWellsy bietet ein Premium-Abonnement (Monats- und Jahrespläne) über den App Store (Apple Inc.) und Google Play (Google LLC) an. Der Abonnementstatus wird über RevenueCat, Inc. verwaltet.",
   "sections": [
     {
       "heading": "Verkäuferinformationen",
@@ -22,7 +22,7 @@
       "table": {
         "headers": ["Angabe", "Details"],
         "rows": [
-          ["Preis", "Basisplan: Kostenlos (aktuell)\nPremium-Plan (geplant): Im App Store / Google Play zum Zeitpunkt des Kaufs angezeigter Preis (inkl. Steuern)"],
+          ["Preis", "Basisplan: Kostenlos\nPremium-Plan: Im App Store / Google Play zum Zeitpunkt des Kaufs angezeigter Preis (inkl. Steuern)"],
           ["Zusätzliche Gebühren", "Internetzugang und Datenübertragungsgebühren (vom Benutzer zu tragen)"],
           ["Zahlungsmethode", "App Store (iPhone/iPad): Zahlung über Apple ID\nGoogle Play (Android): Zahlung über Google-Konto"],
           ["Abrechnungszeitpunkt", "Sofort beim Kauf berechnet; anschließend automatisch zum jeweiligen Verlängerungsdatum"],
@@ -34,7 +34,7 @@
       }
     },
     {
-      "heading": "Kündigung (Zur künftigen Referenz)",
+      "heading": "Kündigung",
       "subsections": [
         {
           "heading": "iPhone / iPad",

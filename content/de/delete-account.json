@@ -5,7 +5,7 @@
   "warningItems": [
     "Alle Daten werden dauerhaft gelöscht und können nicht wiederhergestellt werden.",
     "Wenn Sie Inhalte aus Gruppen entfernen möchten, löschen Sie diese bitte selbst, bevor Sie Ihr Konto löschen.",
-    "Wenn Sie ein zukünftiges Premium-Abonnement haben, kündigen Sie es im App Store oder Google Play Ihres Geräts, bevor Sie Ihr Konto löschen."
+    "Wenn Sie ein aktives Premium-Abonnement haben, kündigen Sie es im App Store oder Google Play Ihres Geräts, bevor Sie Ihr Konto löschen."
   ],
   "deletedDataTitle": "Was wird gelöscht",
   "deletedDataNote": "Die Kontolöschung löst Cloud Functions (deleteUserData) aus, die folgende Daten aus Firebase (Cloud Firestore & Storage) entfernen.",

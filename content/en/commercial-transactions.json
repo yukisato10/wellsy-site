@@ -2,7 +2,7 @@
   "title": "Commercial Transactions Notice",
   "lastUpdated": "Last updated: June 9, 2026",
   "description": "This page is required under Japan's Act on Specified Commercial Transactions.",
-  "intro": "This disclosure is made in accordance with Japan's Act on Specified Commercial Transactions (Article 11, Mail-Order Sales).\n\nThe Service currently has no paid features. A premium subscription is planned for the future via App Store and Google Play. This page will be updated when billing is introduced.",
+  "intro": "This disclosure is made in accordance with Japan's Act on Specified Commercial Transactions (Article 11, Mail-Order Sales).\n\nWellsy offers a Premium subscription (monthly and annual plans) via the App Store (Apple Inc.) and Google Play (Google LLC). Subscription status is managed through RevenueCat, Inc.",
   "sections": [
     {
       "heading": "Seller Information",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "heading": "How to Cancel (Future Reference)",
+      "heading": "How to Cancel",
       "subsections": [
         {
           "heading": "iPhone / iPad",

@@ -40,10 +40,10 @@
             "Firebase UID (Firebase Authentication의 고유 식별자)",
             "FCM 토큰 (푸시 알림용 기기 토큰)",
             "언어 및 시간대 설정",
-            "AI 분석 사용 횟수 (Cloud Firestore: users/{uid}/usage_limits)",
+            "AI 분석 사용 횟수 (Cloud Firestore: users/{uid}/usageDaily/{yyyyMMdd})",
             "생성/업데이트 타임스탬프",
             "연속 기록(스트리크) 데이터",
-            "구독 상태 (결제 도입 시)"
+            "구독 상태 (RevenueCat을 통해 관리)"
           ]
         },
         {
@@ -56,7 +56,7 @@
         {
           "heading": "현재 수집하지 않는 정보",
           "bullets": [
-            "결제/신용카드 정보 (결제 기능 미구현)",
+            "신용카드 번호 등 결제 정보 (결제는 App Store/Google Play에서 처리되며, 당 서비스에서 보유하지 않습니다)",
             "위치 정보",
             "상세 충돌 보고서 또는 사용 분석 (현재 비활성화)"
           ]
@@ -78,7 +78,7 @@
           ["버그 수정 및 서비스 개선", "정당한 이익 (f)"],
           ["고객 지원", "계약/정당한 이익 (b)/(f)"],
           ["법적 의무 준수", "법적 의무 (c)"],
-          ["구독 관리 (향후)", "계약 이행 (b)"]
+          ["구독 관리 (RevenueCat 경유)", "계약 이행 (b)"]
         ]
       }
     },
@@ -88,7 +88,7 @@
         "AI 음식 분석 기능 이용 시, 음식 사진 또는 텍스트가 Cloud Functions(asia-northeast1 지역)를 통해 OpenAI, Inc.(미국)로 전송됩니다.",
         "음식 이미지 또는 텍스트만 전송되며, UID, 이름, 이메일은 OpenAI로 전송되지 않습니다.",
         "OpenAI는 API 데이터를 모델 학습에 사용하지 않습니다(2023년 3월부터의 정책).",
-        "이용 한도: 무료 플랜 하루 2회, 프리미엄 하루 10회(예정).",
+        "이용 한도: 무료 플랜 – 사진 분석 1회/일, 텍스트 분석 1회/일(각각); 프리미엄 – 무제한.",
         "OpenAI 개인정보처리방침: https://openai.com/privacy"
       ]
     },
@@ -111,7 +111,7 @@
             "users/{uid}/meal_logs: 음식명, 재료, 칼로리, 영양소, 사진 URL, AI 코멘트",
             "users/{uid}/weight_logs: 체중, 체지방, 단위",
             "users/{uid}/sleep_logs: 취침 시간, 기상 시간, 수면 시간",
-            "users/{uid}/usage_limits: AI 분석 사용 횟수",
+            "users/{uid}/usageDaily/{yyyyMMdd}: AI 분석 일별 사용 횟수",
             "groups/{groupId}: 그룹명, 초대 코드, 회원 수",
             "groups/{groupId}/sharedMeals: 게시물(24시간 TTL), 댓글, 반응, 셀피 URL"
           ]

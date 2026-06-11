@@ -2,7 +2,7 @@
   "title": "Mentions relatives aux transactions commerciales",
   "lastUpdated": "Dernière mise à jour : 9 juin 2026",
   "description": "Cette page est requise en vertu de la loi japonaise sur les transactions commerciales spécifiées.",
-  "intro": "Cette divulgation est effectuée conformément à la loi japonaise sur les transactions commerciales spécifiées (Article 11, Vente par correspondance).\n\nLe Service ne dispose actuellement d'aucune fonctionnalité payante. Un abonnement premium est prévu pour l'avenir via l'App Store et Google Play. Cette page sera mise à jour lors de l'introduction de la facturation.",
+  "intro": "Cette divulgation est effectuée conformément à la loi japonaise sur les transactions commerciales spécifiées (Article 11, Vente par correspondance).\n\nWellsy propose un abonnement Premium (plans mensuel et annuel) via l'App Store (Apple Inc.) et Google Play (Google LLC). La gestion des abonnements est assurée par RevenueCat, Inc.",
   "sections": [
     {
       "heading": "Informations sur le vendeur",
@@ -34,7 +34,7 @@
       }
     },
     {
-      "heading": "Comment annuler (Pour référence future)",
+      "heading": "Comment annuler",
       "subsections": [
         {
           "heading": "iPhone / iPad",

@@ -40,10 +40,10 @@
             "Firebase UID (unique identifier from Firebase Authentication)",
             "FCM token (device token for push notifications)",
             "Language & timezone settings",
-            "AI analysis usage count (Cloud Firestore: users/{uid}/usage_limits)",
+            "AI analysis usage count (Cloud Firestore: users/{uid}/usageDaily/{yyyyMMdd})",
             "Created/updated timestamps",
             "Streak data",
-            "Subscription status (when billing is introduced)"
+            "Subscription status (managed via RevenueCat)"
           ]
         },
         {
@@ -56,7 +56,7 @@
         {
           "heading": "Data NOT currently collected",
           "bullets": [
-            "Payment / credit-card data (billing not yet implemented)",
+            "Credit card or payment card data (payments are processed by App Store / Google Play; we never hold payment credentials)",
             "Location data",
             "Detailed crash reports or usage analytics (currently disabled)"
           ]
@@ -78,7 +78,7 @@
           ["Bug fixing & service improvement", "Legitimate interests (f)"],
           ["Customer support", "Contract / Legitimate interests (b)/(f)"],
           ["Legal compliance", "Legal obligation (c)"],
-          ["Subscription management (future)", "Performance of contract (b)"]
+          ["Subscription management (via RevenueCat)", "Performance of contract (b)"]
         ]
       }
     },
@@ -88,7 +88,7 @@
         "When you use AI food analysis, your food photo or text is sent to OpenAI, Inc. (USA) via our Cloud Functions (asia-northeast1 region).",
         "Only the food image or text is sent — your UID, name, and email are NOT sent to OpenAI.",
         "OpenAI does not use API data to train its models (per their policy since March 2023).",
-        "Usage limits: 2 analyses/day (free plan); 10/day planned for premium.",
+        "Usage limits: free plan — 1 photo analysis/day and 1 text analysis/day (each); Premium — unlimited.",
         "OpenAI Privacy Policy: https://openai.com/privacy"
       ]
     },
@@ -111,7 +111,7 @@
             "users/{uid}/meal_logs: food name, ingredients, calories, macros, photo URL, AI comment",
             "users/{uid}/weight_logs: weight, body fat, unit",
             "users/{uid}/sleep_logs: bedtime, wake time, duration",
-            "users/{uid}/usage_limits: AI analysis usage count",
+            "users/{uid}/usageDaily/{yyyyMMdd}: daily AI analysis usage count",
             "groups/{groupId}: group name, invite code, member count",
             "groups/{groupId}/sharedMeals: posts (24 h TTL), comments, reactions, selfie URLs"
           ]

@@ -40,10 +40,10 @@
             "UID Firebase (identifiant unique issu de Firebase Authentication)",
             "Jeton FCM (jeton d'appareil pour les notifications push)",
             "Paramètres de langue et de fuseau horaire",
-            "Compteur d'utilisation de l'analyse IA (Cloud Firestore : users/{uid}/usage_limits)",
+            "Compteur d'utilisation de l'analyse IA (Cloud Firestore : users/{uid}/usageDaily/{yyyyMMdd})",
             "Horodatages de création/mise à jour",
             "Données de série (streak)",
-            "Statut d'abonnement (lors de l'introduction de la facturation)"
+            "Statut d'abonnement (géré via RevenueCat)"
           ]
         },
         {
@@ -56,7 +56,7 @@
         {
           "heading": "Données NON collectées actuellement",
           "bullets": [
-            "Données de paiement / carte de crédit (facturation non encore implémentée)",
+            "Numéro de carte de crédit ou données de paiement (les paiements sont traités via l'App Store / Google Play ; nous ne conservons pas les données de paiement)",
             "Données de localisation",
             "Rapports de plantage détaillés ou analyses d'utilisation (actuellement désactivés)"
           ]
@@ -78,7 +78,7 @@
           ["Correction de bugs et amélioration du service", "Intérêts légitimes (f)"],
           ["Service client", "Contrat / Intérêts légitimes (b)/(f)"],
           ["Conformité légale", "Obligation légale (c)"],
-          ["Gestion des abonnements (futur)", "Exécution du contrat (b)"]
+          ["Gestion des abonnements (via RevenueCat)", "Exécution du contrat (b)"]
         ]
       }
     },
@@ -88,7 +88,7 @@
         "Lorsque vous utilisez l'analyse alimentaire IA, votre photo ou texte alimentaire est envoyé à OpenAI, Inc. (États-Unis) via nos Cloud Functions (région asia-northeast1).",
         "Seule l'image ou le texte alimentaire est envoyé — votre UID, nom et e-mail ne sont PAS transmis à OpenAI.",
         "OpenAI n'utilise pas les données API pour entraîner ses modèles (conformément à sa politique depuis mars 2023).",
-        "Limites d'utilisation : 2 analyses/jour (plan gratuit) ; 10/jour prévu pour le premium.",
+        "Limites d'utilisation : plan gratuit – 1 analyse photo/jour et 1 analyse texte/jour (chacune) ; Premium – illimité.",
         "Politique de confidentialité d'OpenAI : https://openai.com/privacy"
       ]
     },
@@ -111,7 +111,7 @@
             "users/{uid}/meal_logs : nom de l'aliment, ingrédients, calories, macronutriments, URL photo, commentaire IA",
             "users/{uid}/weight_logs : poids, masse grasse, unité",
             "users/{uid}/sleep_logs : heure de coucher, heure de réveil, durée",
-            "users/{uid}/usage_limits : compteur d'utilisation de l'analyse IA",
+            "users/{uid}/usageDaily/{yyyyMMdd} : compteur journalier d'utilisation de l'analyse IA",
             "groups/{groupId} : nom du groupe, code d'invitation, nombre de membres",
             "groups/{groupId}/sharedMeals : publications (TTL 24 h), commentaires, réactions, URLs de selfies"
           ]
